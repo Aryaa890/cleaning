@@ -15,8 +15,7 @@
         <div class="col-lg-6">
 
 
-
-            <a href="" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Tambah Menu Baru</a>
+            <a href="" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Tambah User Baru</a>
 
             <table class="table table-hover">
                 <thead>
@@ -91,11 +90,8 @@
                             <?php endforeach; ?>
                         </select>
                     </div>
-                    <div class="col-sm-9">
-                        <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="image" name="image">
-                            <label class="custom-file-label" for="image">Pilih file</label>
-                        </div>
+                    <div class="form-group">
+                        <input type="file" class="form-control" id="image" name="image">
                     </div>
                     <div class="form-group">
                         <div class="form-check">

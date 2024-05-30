@@ -1,753 +1,356 @@
-<!doctype html>
-<html lang="zxx">
-
-<!-- Mirrored from templates.hibootstrap.com/viscous/default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 May 2024 14:25:54 GMT -->
-
-<head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-
-    <link rel="stylesheet" href="assets/css/slick.css">
-
-    <link rel="stylesheet" href="assets/css/slick-theme.css">
-
-    <link rel="stylesheet" href="assets/css/icofont.min.css">
-
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-
-    <link rel="stylesheet" href="assets/css/flaticon.css">
-
-    <link rel="stylesheet" href="assets/css/meanmenu.css">
-
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <link rel="stylesheet" href="assets/css/dark.css">
-
-    <link rel="stylesheet" href="assets/css/responsive.css">
-
-    <title>Viscous - Cleaning Services HTML Template</title>
-
-    <link rel="icon" type="image/png" href="assets/img/favicon.png">
-</head>
-
 <body>
-
-    <div class="loader-content">
-        <div class="d-table">
-            <div class="d-table-cell">
-                <div id="loading-center">
-                    <div id="loading-center-absolute">
-                        <div class="object" id="object_one"></div>
-                        <div class="object" id="object_two"></div>
-                        <div class="object" id="object_three"></div>
-                        <div class="object" id="object_four"></div>
-                    </div>
-                </div>
+    <!-- preloader -->
+    <div class="preloader">
+        <div class="loader-6">
+            <div class="set-one">
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+            <div class="set-two">
+                <div class="circle"></div>
+                <div class="circle"></div>
             </div>
         </div>
     </div>
-
-
-    <div class="header-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-8 col-md-12">
-                    <div class="header-widget">
-                        <ul>
-                            <li>
-                                <i class="icofont-clock-time"></i>
-                                Sun - Thu : 10:00AM - 06:00PM
-                            </li>
-                            <li>
-                                <i class="icofont-location-pin"></i>
-                                28/A Street, New York City
-                            </li>
-                            <li>
-                                <i class="icofont-phone"></i>
-                                <a href="tel:+880123456789">
-                                    +88 0123 456 789
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="header-social text-end">
-                        <ul>
-                            <li>
-                                <a href="#"><i class="icofont-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="icofont-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="icofont-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="icofont-instagram"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="navbar-area">
-
-        <div class="mobile-nav">
-            <a href="index.html" class="logo">
-                <img src="assets/img/logo.png" class="main-logo" alt="logo">
-                <img src="assets/img/logo-2.png" class="white-logo" alt="logo">
-            </a>
-        </div>
-
-        <div class="main-nav">
+    <!-- preloader end -->
+    <header>
+        <div class="top-bar">
             <div class="container">
-                <nav class="navbar navbar-expand-md navbar-light">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="assets/img/logo.png" class="main-logo" alt="logo">
-                        <img src="assets/img/logo-2.png" class="white-logo" alt="logo">
-                    </a>
-                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link dropdown-toggle active">
-                                    Home
-                                    <i class="icofont-rounded-right"></i>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <a href="index.html" class="nav-link active">Home Page 1</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="index-two.html" class="nav-link">Home Page 2</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="index-three.html" class="nav-link">Home Page 3</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="about.html" class="nav-link">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="service.html" class="nav-link dropdown-toggle">
-                                    Services
-                                    <i class="icofont-rounded-right"></i>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <a href="service.html" class="nav-link">Service one</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="service-two.html" class="nav-link">Services two</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="service-three.html" class="nav-link">Service three</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="service-details.html" class="nav-link">Service details</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="blog.html" class="nav-link dropdown-toggle">
-                                    Blog
-                                    <i class="icofont-rounded-right"></i>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <a href="blog.html" class="nav-link">Blog</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="blog-right-sidebar.html" class="nav-link">Blog Right sidebar</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="blog-details.html" class="nav-link">Blog details</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link dropdown-toggle">
-                                    Pages
-                                    <i class="icofont-rounded-right"></i>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <a href="pricing.html" class="nav-link">Pricing</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="testimonial.html" class="nav-link">Testimonial</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="recent-project.html" class="nav-link">Recent Project</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="404.html" class="nav-link">404 Page</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link dropdown-toggle">
-                                    Team
-                                    <i class="icofont-rounded-right"></i>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <a href="team.html" class="nav-link">Team</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="team-two.html" class="nav-link">Team two</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="contact.html" class="nav-link">Contact</a>
-                            </li>
-                        </ul>
-                        <div class="navbar-button">
-                            <a href="testimonial.html">Get Quote</a>
+                <div class="top-bar-slid">
+                    <div>
+                        <div class="phone-data">
+                            <div class="phone d-flax align-items-center">
+                                <i>
+                                    <svg height="112" viewBox="0 0 24 24" width="112" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-rule="evenodd" fill="rgb(255255,255)" fill-rule="evenodd">
+                                            <path d="m7 2.75c-.41421 0-.75.33579-.75.75v17c0 .4142.33579.75.75.75h10c.4142 0 .75-.3358.75-.75v-17c0-.41421-.3358-.75-.75-.75zm-2.25.75c0-1.24264 1.00736-2.25 2.25-2.25h10c1.2426 0 2.25 1.00736 2.25 2.25v17c0 1.2426-1.0074 2.25-2.25 2.25h-10c-1.24264 0-2.25-1.0074-2.25-2.25z"></path>
+                                            <path d="m10.25 5c0-.41421.3358-.75.75-.75h2c.4142 0 .75.33579.75.75s-.3358.75-.75.75h-2c-.4142 0-.75-.33579-.75-.75z"></path>
+                                            <path d="m9.25 19c0-.4142.33579-.75.75-.75h4c.4142 0 .75.3358.75.75s-.3358.75-.75.75h-4c-.41421 0-.75-.3358-.75-.75z"></path>
+                                        </g>
+                                    </svg>
+                                </i>
+                                <span>Phone:</span><a class="me-3" href="callto:800-836-4620">800-836-4620</a>
+                            </div>
+                            <div class="phone">
+                                <i>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                        <path d="M0,81v350h512V81H0z M456.952,111L256,286.104L55.047,111H456.952z M30,128.967l134.031,116.789L30,379.787V128.967z
+                   M51.213,401l135.489-135.489L256,325.896l69.298-60.384L460.787,401H51.213z M482,379.788L347.969,245.756L482,128.967V379.788z"></path>
+                                    </svg>
+                                </i>
+                                <span>Email:</span><a href="mallto:information@domain.com"><span class="__cf_email__" data-cfemail="3e575058514c535f4a5751507e5a51535f5750105d5153">[email&#160;protected]</span></a>
+                            </div>
                         </div>
                     </div>
+                    <div>
+                        <div class="time">
+                            <div class="login d-flex align-items-center">
+                                <i class="fa-solid fa-clock"></i>
+                                <p>Monday to Saturday:<b>8.00 AM - 05.00 PM</b></p>
+                            </div>
+                            <div class="login">
+                                <i class="fa-solid fa-user"></i>
+                                <a href="#">Login and Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="bottom-bar">
+                <a href="index.html"><img src="<?= base_url('assets/'); ?>img/logo-b.png" alt="logo"></a>
+                <nav class="navbar">
+                    <ul class="navbar-links">
+                        <li class="navbar-dropdown has-children">
+                            <a href="#">home</a>
+                            <ul class="dropdown">
+                                <li><a href="index.html">home 1</a></li>
+                                <li><a href="index-2.html">home 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar-dropdown">
+                            <a href="about.html">About</a>
+                        </li>
+                        <li class="navbar-dropdown has-children">
+                            <a href="#">Services</a>
+                            <ul class="dropdown">
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="services-details.html">Services details</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar-dropdown has-children">
+                            <a href="#">Pages</a>
+                            <ul class="dropdown">
+                                <li><a href="team-details.html">team details</a></li>
+                                <li><a href="pricing-plan.html">pricing plan</a></li>
+                                <li><a href="faq.html">faq</a></li>
+                                <li><a href="404-error.html">404 error</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar-dropdown has-children">
+                            <a href="#">News</a>
+                            <ul class="dropdown">
+                                <li><a href="our-blog.html">our blog</a></li>
+                                <li><a href="blog-details.html">blog details</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar-dropdown">
+                            <a href="contact.html">contact</a>
+                        </li>
+                    </ul>
                 </nav>
+                <div class="pickup">
+                    <div class="extras">
+                        <a href="javascript:void(0)" id="show">
+
+                            </svg>
+                        </a>
+                    </div>
+                    <a href="javascript:void(0)" class="lightbox-toggle sec-btn">Schedule a Pickup</a>
+                </div>
+                <div class="bar-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
         </div>
-    </div>
+        <div class="mobile-nav hmburger-menu" id="mobile-nav" style="display:block;">
+            <div class="res-log">
+                <a href="index.html">
+                    <img src="<?= base_url('assets/'); ?>img/logo.png" alt="Responsive Logo">
+                </a>
+            </div>
+            <ul>
+
+                <li class="menu-item-has-children"><a href="JavaScript:void(0)">Home</a>
+                    <ul class="sub-menu">
+
+                        <li><a href="index.html">home 1</a></li>
+                        <li><a href="index-2.html">home 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">about</a></li>
 
 
-    <div class="home-section">
-        <div class="home-slider-area owl-carousel owl-theme">
-            <div class="home-slider-item items-bg1">
-                <div class="d-table">
-                    <div class="d-table-cell">
-                        <div class="container">
-                            <div class="home-text">
-                                <h1>Your Hygienic Home Our Responsibility</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut
-                                    labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Viverra
-                                    maecenas accumsan lacus vel facilisis. Quis ipsum suspendisse ultrices gravida.</p>
-                                <div class="theme-button">
-                                    <a href="about.html" class="default-btn active-btn">know More</a>
-                                    <a href="contact.html" class="default-btn">Get Started</a>
+                <li class="menu-item-has-children"><a href="JavaScript:void(0)">Services</a>
+
+                    <ul class="sub-menu">
+
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="services-details.html">services details</a></li>
+
+                    </ul>
+
+                </li>
+                <li class="menu-item-has-children"><a href="JavaScript:void(0)">pages</a>
+
+                    <ul class="sub-menu">
+
+                        <li><a href="team-details.html">team details</a></li>
+                        <li><a href="pricing-plan.html">pricing plan</a></li>
+                        <li><a href="faq.html">faq</a></li>
+                        <li><a href="404-error.html">404 error</a></li>
+                    </ul>
+
+                </li>
+                <li class="menu-item-has-children"><a href="JavaScript:void(0)">News</a>
+
+                    <ul class="sub-menu">
+                        <li><a href="our-blog.html">our blog</a></li>
+                        <li><a href="blog-details.html">blog details</a></li>
+
+                    </ul>
+
+                </li>
+
+                <li><a href="contact.html">contacts</a></li>
+
+            </ul>
+
+            <a href="JavaScript:void(0)" id="res-cross"></a>
+
+            <ul class="social-media">
+                <li><a href="#" class="f"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#" class="t"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#" class="in"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="hero-section">
+        <div class="container-full">
+            <div class="row align-items-center slider-home-1 owl-carousel owl-theme">
+                <div class="col-lg-12 item">
+                    <div class="row align-items-center">
+                        <div class="offset-lg-1 col-lg-6">
+                            <div class="hero-text">
+                                <h1>Dry Cleaning & Laundry Experts</h1>
+                                <h4>Dry cleaning and laundry service, made to make life fresher</h4>
+                                <div class="d-md-flex">
+                                    <a href="#" class="sec-btn">Order Now</a>
+                                    <div class="video">
+                                        <a data-fancybox="" href="https://www.youtube.com/watch?v=z4nO6NuEM3A"><i>
+                                                <svg width="15" height="22" viewBox="0 0 11 17" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11 8.5L0.5 0.272758L0.5 16.7272L11 8.5Z" fill="#000"></path>
+                                                </svg>
+                                            </i>
+                                            Wacth Video
+                                        </a>
+                                    </div>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="hero-img">
+                                <img src="<?= base_url('assets/'); ?>img/hero-img-1.jpg" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 item">
+                    <div class="row align-items-center">
+                        <div class="offset-lg-1 col-lg-6">
+                            <div class="hero-text">
+                                <h1>Dry Cleaning & Experts Service</h1>
+                                <h4>Dry cleaning and laundry service, made to make life fresher</h4>
+                                <div class="d-md-flex">
+                                    <a href="#" class="sec-btn">Order Now</a>
+                                    <div class="video">
+                                        <a data-fancybox="" href="https://www.youtube.com/watch?v=z4nO6NuEM3A"><i>
+                                                <svg width="15" height="22" viewBox="0 0 11 17" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11 8.5L0.5 0.272758L0.5 16.7272L11 8.5Z" fill="#000"></path>
+                                                </svg>
+                                            </i>
+                                            Wacth Video
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="hero-img">
+                                <img src="<?= base_url('assets/'); ?>img/hero-img-2.jpg" alt="img">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="home-slider-item items-bg2">
-                <div class="d-table">
-                    <div class="d-table-cell">
-                        <div class="container">
-                            <div class="home-text">
-                                <h1>We provide High Quality Service</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut
-                                    labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Viverra
-                                    maecenas accumsan lacus vel facilisis. Quis ipsum suspendisse ultrices gravida.</p>
-                                <div class="theme-button">
-                                    <a href="about.html" class="default-btn active-btn">know More</a>
-                                    <a href="contact.html" class="default-btn">Get Started</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="home-slider-item items-bg3">
-                <div class="d-table">
-                    <div class="d-table-cell">
-                        <div class="container">
-                            <div class="home-text">
-                                <h1>Our Working Process is Unique</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut
-                                    labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Viverra
-                                    maecenas accumsan lacus vel facilisis. Quis ipsum suspendisse ultrices gravida.</p>
-                                <div class="theme-button">
-                                    <a href="about.html" class="default-btn active-btn">know More</a>
-                                    <a href="contact.html" class="default-btn">Get Started</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-    </div>
-
-
-    <section class="service-section pt-100 pb-70">
-        <div class="container">
-            <div class="section-head text-center">
-                <h2>Viscous Provided <span>Services</span></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc ut labore et
-                    dolore magna aliqua.</p>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="service-card">
-                        <i class="flaticon-medal"></i>
-                        <h3>Top Rated Service</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc.</p>
-                        <div class="theme-button">
-                            <a href="service-details.html" class="default-btn">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="service-card active-service">
-                        <i class="flaticon-credit-card"></i>
-                        <h3>Low Cost Service</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc.</p>
-                        <div class="theme-button">
-                            <a href="service-details.html" class="default-btn">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="service-card">
-                        <i class="flaticon-icon-1584892"></i>
-                        <h3>Fastest Service</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc.</p>
-                        <div class="theme-button">
-                            <a href="service-details.html" class="default-btn">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="service-card">
-                        <i class="flaticon-spray"></i>
-                        <h3>Professional Cleaning</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc.</p>
-                        <div class="theme-button">
-                            <a href="service-details.html" class="default-btn">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="service-card">
-                        <i class="flaticon-clean-house"></i>
-                        <h3>House Cleaning</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc.</p>
-                        <div class="theme-button">
-                            <a href="service-details.html" class="default-btn">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="service-card">
-                        <i class="flaticon-wiper"></i>
-                        <h3>Office Cleaning</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc.</p>
-                        <div class="theme-button">
-                            <a href="service-details.html" class="default-btn">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="service-shapes">
-                <img src="assets/img/service/shapes/1.png" alt="shape">
-                <img src="assets/img/service/shapes/2.png" alt="shape">
-                <img src="assets/img/service/shapes/3.png" alt="shape">
-                <img src="assets/img/service/shapes/4.png" alt="shape">
-                <img src="assets/img/service/shapes/5.png" alt="shape">
-                <img src="assets/img/service/shapes/6.png" alt="shape">
-                <img src="assets/img/service/shapes/7.png" alt="shape">
-                <img src="assets/img/service/shapes/8.png" alt="shape">
-                <img src="assets/img/service/shapes/9.png" alt="shape">
-                <img src="assets/img/service/shapes/10.png" alt="shape">
-            </div>
-        </div>
+        <div class="heroshaps-1"></div>
+        <div class="heroshaps-2"></div>
     </section>
-
-
-    <section class="why-choose-section why-choose-bg">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-6 why-choose-img">
-                </div>
-                <div class="col-lg-5 offset-lg-6 offset-md-0">
-                    <div class="why-choose-text">
-                        <div class="section-head">
-                            <h2>Why Choose Us</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </div>
-                    <div class="why-choose-accordian">
-                        <div class="accordion" id="accordionExample">
-                            <div class="card">
-                                <div class="card-header" id="headingOne">
-                                    <h2 class="mb-0">
-                                        <a href="#" class="btn" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            Expert Cleaners
-                                        </a>
-                                    </h2>
-                                </div>
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                    <div class="card-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="headingTwo">
-                                    <h2 class="mb-0">
-                                        <a href="#" class="btn collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            Latest Equipment
-                                        </a>
-                                    </h2>
-                                </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                    <div class="card-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="headingThree">
-                                    <h2 class="mb-0">
-                                        <a href="#" class="btn collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            Clean & Fast Service
-                                        </a>
-                                    </h2>
-                                </div>
-                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                    <div class="card-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="headingFour">
-                                    <h2 class="mb-0">
-                                        <a href="#" class="btn collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                            Budget Oriented
-                                        </a>
-                                    </h2>
-                                </div>
-                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                                    <div class="card-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="why-choose-contact">
-                            <form>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Number">
-                                </div>
-                                <button type="submit" class="btn btn-primary">
-                                    Request A Call
-                                </button>
-                            </form>
-                            <p>Get a free call for service</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="why-choose-shape">
-                <img src="assets/img/why-choose/shape-1.png" alt="shape">
-            </div>
-        </div>
-    </section>
-
-
-    <div class="process-section pb-70">
+    <section class="gap">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="process-card">
-                        <i class="icofont-touch"></i>
-                        <h3>Choose Services</h3>
-                        <p>Lorem Ipsum is simply dummied text of the printing and typesetting industry.</p>
-                        <img src="assets/img/process-pattern-2.png" alt="arrow">
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="process-card">
-                        <i class="icofont-world"></i>
-                        <h3>Booking Online</h3>
-                        <p>Lorem Ipsum is simply dummied text of the printing and typesetting industry.</p>
-                        <img src="assets/img/process-pattern-2.png" alt="arrow">
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 offset-sm-3 offset-md-0">
-                    <div class="process-card">
-                        <i class="icofont-recycle-alt"></i>
-                        <h3>Enjoy Cleaning</h3>
-                        <p>Lorem Ipsum is simply dummied text of the printing and typesetting industry.</p>
-                    </div>
-                </div>
+            <div class="heading">
+                <img src="<?= base_url('assets/'); ?>img/heading-img.png" alt="heading-img">
+                <p>Welcome to the Dry Cleaning Company</p>
+                <h2>Professional Cleaning Services for Home and Office</h2>
             </div>
-        </div>
-    </div>
-
-
-    <section class="pricing-section pb-70">
-        <div class="container">
-            <div class="section-head text-center">
-                <h2>Our <span>Pricing Plan</span></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc ut labore et
-                    dolore magna aliqua.</p>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="price-card-area">
-                        <div class="price-head-text">
-                            <h4>Basic Plan</h4>
-                            <h2>$<span>60</span>/month</h2>
-                        </div>
-                        <div class="plan-features">
-                            <ul>
-                                <li>
-                                    <i class="icofont-check-circled"></i>
-                                    Fully Satisfaction
-                                </li>
-                                <li>
-                                    <i class="icofont-check-circled"></i>
-                                    5 Hours
-                                </li>
-                                <li>
-                                    <i class="icofont-check-circled"></i>
-                                    1 time in a week
-                                </li>
-                                <li>
-                                    <i class="icofont-check-circled"></i>
-                                    Full Cleaning
-                                </li>
-                                <li>
-                                    <i class="icofont-check-circled"></i>
-                                    All Our Equipment
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="plan-btn">
-                            <a href="#">Booking Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="price-card-area active-price">
-                        <div class="price-head-text">
-                            <h4>Standard Plan</h4>
-                            <h2>$<span>99</span>/month</h2>
-                        </div>
-                        <div class="plan-features">
-                            <ul>
-                                <li>
-                                    <i class="icofont-check-circled"></i>
-                                    Fully Satisfaction
-                                </li>
-                                <li>
-                                    <i class="icofont-check-circled"></i>
-                                    7 Hours
-                                </li>
-                                <li>
-                                    <i class="icofont-check-circled"></i>
-                                    2 time in a week
-                                </li>
-                                <li>
-                                    <i class="icofont-check-circled"></i>
-                                    Full Cleaning
-                                </li>
-                                <li>
-                                    <i class="icofont-check-circled"></i>
-                                    All Our Equipment
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="plan-btn">
-                            <a href="#">Booking Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 offset-md-3 col-sm-6  offset-lg-0 offset-sm-3">
-                    <div class="price-card-area">
-                        <div class="price-head-text">
-                            <h4>Premium Plan</h4>
-                            <h2>$<span>159</span>/month</h2>
-                        </div>
-                        <div class="plan-features">
-                            <ul>
-                                <li>
-                                    <i class="icofont-check-circled"></i>
-                                    Fully Satisfaction
-                                </li>
-                                <li>
-                                    <i class="icofont-check-circled"></i>
-                                    10 Hours
-                                </li>
-                                <li>
-                                    <i class="icofont-check-circled"></i>
-                                    3 time in a week
-                                </li>
-                                <li>
-                                    <i class="icofont-check-circled"></i>
-                                    Full Cleaning
-                                </li>
-                                <li>
-                                    <i class="icofont-check-circled"></i>
-                                    All Our Equipment
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="plan-btn">
-                            <a href="#">Booking Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <div class="counter-section pt-100">
-        <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-5">
-                    <div class="offer-text">
-                        <h2>Get <span>15% Discount</span> on your first Service</h2>
-                        <div class="theme-button">
-                            <a href="pricing.html" class="default-btn">Book Now</a>
+                <div class="col-lg-6">
+                    <div class="professional-img">
+                        <img alt="img" src="<?= base_url('assets/'); ?>img/professional.jpg">
+                        <div class="professional-phon">
+                            <img alt="img" src="<?= base_url('assets/'); ?>img/phon-icon.png">
+                            <span>Emergency? Call Us Now :</span>
+                            <a href="callto:+1234567890">+123 4567 890</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-7">
-                    <div class="counter-area">
-                        <div class="row">
-                            <div class="col-lg-5 col-md-3 col-6 offset-lg-1">
-                                <div class="counter-text">
-                                    <h2><span class="counter">1</span>K</h2>
-                                    <p>Job Done</p>
-                                </div>
+                <div class="col-lg-6">
+                    <div class="professional">
+                        <p>Our home cleaning services are designed to give you the peace of mind you deserve and the time you need to enjoy your life and love give you the peace of mind you deserve and the time you need to enjoy your life and love home cleaning services.</p>
+                        <ul class="list-style">
+                            <li>
+                                <div class="bol"></div>One-off, weekly or fortnightly visits
+                            </li>
+                            <li>
+                                <div class="bol"></div>Vetted & background-checked cleaners
+                            </li>
+                            <li>
+                                <div class="bol"></div>Keep the same cleaner for every visit
+                            </li>
+                            <li>
+                                <div class="bol"></div>Book, manage & pay online
+                            </li>
+                        </ul>
+                        <div class="d-sm-flex align-items-center">
+                            <div class="d-flex align-items-center">
+                                <h4>14<sup>+</sup></h4>
+                                <h6>years of experience</h6>
                             </div>
-                            <div class="col-lg-5 col-md-3 col-6">
-                                <div class="counter-text">
-                                    <h2><span class="counter">989</span></h2>
-                                    <p>Happy Clients</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-5 col-md-3 col-6 offset-lg-1">
-                                <div class="counter-text">
-                                    <h2><span class="counter">45</span></h2>
-                                    <p>Experts</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-5 col-md-3 col-6">
-                                <div class="counter-text">
-                                    <h2><span class="counter">12</span></h2>
-                                    <p>Years of Experience</p>
+                            <div class="d-flex align-items-center company-director">
+                                <img src="<?= base_url('assets/'); ?>img/man.jpg" alt="img">
+                                <div>
+                                    <span>Company Director</span>
+                                    <h6>Thomas Walkar</h6>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="counter-shape">
-                <img src="assets/img/counter/1.png" alt="shape">
-                <img src="assets/img/counter/2.png" alt="shape">
-                <img src="assets/img/counter/3.png" alt="shape">
-                <img src="assets/img/counter/4.png" alt="shape">
-                <img src="assets/img/counter/5.png" alt="shape">
-                <img src="assets/img/counter/6.png" alt="shape">
-                <img src="assets/img/counter/7.png" alt="shape">
-                <img src="assets/img/counter/1.png" alt="shape">
-                <img src="assets/img/counter/8.png" alt="shape">
-                <img src="assets/img/counter/4.png" alt="shape">
-                <img src="assets/img/counter/shape-1.png" alt="bubble shape">
-                <img src="assets/img/counter/shape-1.png" alt="bubble shape">
             </div>
         </div>
-    </div>
-
-
-    <section class="team-section pt-100 pb-70">
+    </section>
+    <section class="gap no-top">
         <div class="container">
-            <div class="section-head text-center">
-                <h2>Our <span>Team Members</span></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc ut labore et
-                    dolore magna aliqua.</p>
+            <div class="heading two">
+                <p>Dryclean Services</p>
+                <h2>We Collect, Clean Laundry & Dry Cleaning.</h2>
             </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="team-card">
-                        <div class="team-img">
-                            <img src="assets/img/team/1.png" alt="team member">
-                            <div class="team-social">
-                                <a href="#"><i class="icofont-facebook"></i></a>
-                                <a href="#"><i class="icofont-twitter"></i></a>
-                                <a href="#"><i class="icofont-linkedin"></i></a>
-                                <a href="#"><i class="icofont-instagram"></i></a>
+            <div class="row service-slider owl-carousel owl-theme">
+                <div class="item">
+                    <div class="service">
+                        <img src="<?= base_url('assets/'); ?>img/service-1.jpg" alt="service-img">
+                        <div class="service-text">
+                            <i><img src="<?= base_url('assets/'); ?>img/service-icon-1.png" alt="service-icon"></i>
+                            <div class="service-data">
+                                <a href="services-details.html">
+                                    <h4>Wash & Fold Laundry Service</h4>
+                                </a>
+                                <p>Lorem ipsum dolor sit amet cons ectetur adipisicing elit, sed do ei m dolousmod</p>
                             </div>
-                        </div>
-                        <div class="team-text">
-                            <h4>John Smith</h4>
-                            <p>Head of Cleaner</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="team-card">
-                        <div class="team-img">
-                            <img src="assets/img/team/2.png" alt="team member">
-                            <div class="team-social">
-                                <a href="#"><i class="icofont-facebook"></i></a>
-                                <a href="#"><i class="icofont-twitter"></i></a>
-                                <a href="#"><i class="icofont-linkedin"></i></a>
-                                <a href="#"><i class="icofont-instagram"></i></a>
+                <div class="item">
+                    <div class="service">
+                        <img src="<?= base_url('assets/'); ?>img/service-2.jpg" alt="service-img">
+                        <div class="service-text">
+                            <i><img src="<?= base_url('assets/'); ?>img/service-icon-2.png" alt="service-icon"></i>
+                            <div class="service-data">
+                                <a href="services-details.html">
+                                    <h4>Alternations and Repairs</h4>
+                                </a>
+                                <p>Lorem ipsum dolor sit amet cons ectetur adipisicing elit, sed do ei m dolousmod</p>
                             </div>
-                        </div>
-                        <div class="team-text">
-                            <h4>Marry</h4>
-                            <p>Cleaner</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="team-card">
-                        <div class="team-img">
-                            <img src="assets/img/team/3.png" alt="team member">
-                            <div class="team-social">
-                                <a href="#"><i class="icofont-facebook"></i></a>
-                                <a href="#"><i class="icofont-twitter"></i></a>
-                                <a href="#"><i class="icofont-linkedin"></i></a>
-                                <a href="#"><i class="icofont-instagram"></i></a>
+                <div class="item">
+                    <div class="service">
+                        <img src="<?= base_url('assets/'); ?>img/service-3.jpg" alt="service-img">
+                        <div class="service-text">
+                            <i><img src="<?= base_url('assets/'); ?>img/service-icon-3.png" alt="service-icon"></i>
+                            <div class="service-data">
+                                <a href="services-details.html">
+                                    <h4>Wedding Gowns Drycleaning</h4>
+                                </a>
+                                <p>Lorem ipsum dolor sit amet cons ectetur adipisicing elit, sed do ei m dolousmod</p>
                             </div>
-                        </div>
-                        <div class="team-text">
-                            <h4>John Smith</h4>
-                            <p>Office Cleaner</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="team-card">
-                        <div class="team-img">
-                            <img src="assets/img/team/4.png" alt="team member">
-                            <div class="team-social">
-                                <a href="#"><i class="icofont-facebook"></i></a>
-                                <a href="#"><i class="icofont-twitter"></i></a>
-                                <a href="#"><i class="icofont-linkedin"></i></a>
-                                <a href="#"><i class="icofont-instagram"></i></a>
+                <div class="item">
+                    <div class="service">
+                        <img src="<?= base_url('assets/'); ?>img/service-4.jpg" alt="service-img">
+                        <div class="service-text">
+                            <i><img src="<?= base_url('assets/'); ?>img/service-icon-5.png" alt="service-icon"></i>
+                            <div class="service-data">
+                                <a href="#">
+                                    <h4>Commercial Laundry Service</h4>
+                                </a>
+                                <p>Lorem ipsum dolor sit amet cons ectetur adipisicing elit, sed do ei m dolousmod</p>
                             </div>
-                        </div>
-                        <div class="team-text">
-                            <h4>Eve</h4>
-                            <p>Assistant</p>
                         </div>
                     </div>
                 </div>
@@ -755,548 +358,437 @@
         </div>
     </section>
 
-
-    <div class="testimonial-section testimonial-bg ptb-100">
-        <div class="testimonial-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 offset-lg-0 col-md-10 offset-md-1 col-sm-10 offset-sm-1">
-                        <div class="row">
-                            <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
-                                <div class="testimonial-image-slider slider-nav text-center">
-                                    <div class="sin-testiImage">
-                                        <img src="assets/img/testimonial/1.png" alt="Client image">
-                                    </div>
-                                    <div class="sin-testiImage">
-                                        <img src="assets/img/testimonial/2.png" alt="Client image">
-                                    </div>
-                                    <div class="sin-testiImage">
-                                        <img src="assets/img/testimonial/1.png" alt="Client image">
-                                    </div>
-                                    <div class="sin-testiImage">
-                                        <img src="assets/img/testimonial/2.png" alt="Client image">
-                                    </div>
-                                    <div class="sin-testiImage">
-                                        <img src="assets/img/testimonial/1.png" alt="Client image">
-                                    </div>
-                                    <div class="sin-testiImage">
-                                        <img src="assets/img/testimonial/2.png" alt="Client image">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-text-slider slider-for text-center">
-                            <div class="sin-testiText">
-                                <h2>Stepheny Mc.man</h2>
-                                <span>Co-worker of 3S</span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do is ut labore et
-                                    dolore magna aliqua. Quis ipsum suspendisse ultrices . Risus commodo viverra
-                                    maecenas accumsan lacus vel facilisis.</p>
-                            </div>
-                            <div class="sin-testiText">
-                                <h2>Jackson</h2>
-                                <span>Graphics Designer of 3S</span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do is ut labore et
-                                    dolore magna aliqua. Quis ipsum suspendisse ultrices . Risus commodo viverra
-                                    maecenas accumsan lacus vel facilisis.</p>
-                            </div>
-                            <div class="sin-testiText">
-                                <h2>Amelia</h2>
-                                <span>Web Developer of 3S</span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do is ut labore et
-                                    dolore magna aliqua. Quis ipsum suspendisse ultrices . Risus commodo viverra
-                                    maecenas accumsan lacus vel facilisis.</p>
-                            </div>
-                            <div class="sin-testiText">
-                                <h2>Stepheny Mc.man</h2>
-                                <span>Co-worker of 3S</span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do is ut labore et
-                                    dolore magna aliqua. Quis ipsum suspendisse ultrices . Risus commodo viverra
-                                    maecenas accumsan lacus vel facilisis.</p>
-                            </div>
-                            <div class="sin-testiText">
-                                <h2>Jahan</h2>
-                                <span>Co-worker of 3S</span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do is ut labore et
-                                    dolore magna aliqua. Quis ipsum suspendisse ultrices . Risus commodo viverra
-                                    maecenas accumsan lacus vel facilisis.</p>
-                            </div>
-                            <div class="sin-testiText">
-                                <h2>Amelia</h2>
-                                <span>SEO Expert of 3S</span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do is ut labore et
-                                    dolore magna aliqua. Quis ipsum suspendisse ultrices . Risus commodo viverra
-                                    maecenas accumsan lacus vel facilisis.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <section class="blog-section pt-100">
+    <section class="works-section" style="background-image: url(<?= base_url('assets/'); ?>img/works-section.jpg);">
         <div class="container">
-            <div class="section-head text-center">
-                <h2>Latest <span>Blogs</span></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc ut labore et
-                    dolore magna aliqua.</p>
+            <div class="heading">
+                <img src="<?= base_url('assets/'); ?>img/heading-img.png" alt="heading-img">
+                <p>Follow A Few Easy Steps</p>
+                <h2>How it Works</h2>
             </div>
-            <div class="blog-slider owl-carousel owl-theme">
-                <div class="blog-area">
-                    <div class="blog-img">
-                        <a href="blog-details.html">
-                            <img src="assets/img/blog/1.png" alt="blog image">
-                        </a>
-                    </div>
-                    <div class="blog-text">
-                        <h4><a href="blog-details.html">How to cleanroom yourself</a></h4>
-                        <ul>
-                            <li>
-                                <i class="icofont-calendar"></i>
-                                20 Feb 2021
-                            </li>
-                            <li>
-                                <i class="icofont-ui-user"></i>
-                                <a href="#">John Doe</a>
-                            </li>
-                        </ul>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc ut
-                            labore.</p>
-                        <a href="blog-details.html" class="blog-btn">
-                            Read more
-                            <i class="icofont-rounded-right"></i>
-                        </a>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="work-stap">
+                        <div class="work-stap-img">
+                            <i><img alt="img" src="<?= base_url('assets/'); ?>img/works-icon-1.png"></i>
+                            <span>1</span>
+                        </div>
+                        <h3>Book A Pickup</h3>
+                        <p>Choose when and where you wish us to collect & deliver your laundry.</p>
                     </div>
                 </div>
-                <div class="blog-area">
-                    <div class="blog-img">
-                        <a href="blog-details.html">
-                            <img src="assets/img/blog/2.png" alt="blog image">
-                        </a>
-                    </div>
-                    <div class="blog-text">
-                        <h4><a href="blog-details.html">Enjoy the working time</a></h4>
-                        <ul>
-                            <li>
-                                <i class="icofont-calendar"></i>
-                                20 Feb 2021
-                            </li>
-                            <li>
-                                <i class="icofont-ui-user"></i>
-                                <a href="#">John Doe</a>
-                            </li>
-                        </ul>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc ut
-                            labore.</p>
-                        <a href="blog-details.html" class="blog-btn">
-                            Read more
-                            <i class="icofont-rounded-right"></i>
-                        </a>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="work-stap two">
+                        <div class="work-stap-img">
+                            <i><img alt="img" src="<?= base_url('assets/'); ?>img/works-icon-2.png"></i>
+                            <span>2</span>
+                        </div>
+                        <h3>We Collect</h3>
+                        <p>Our team collects your clothes from your doorstep. </p>
                     </div>
                 </div>
-                <div class="blog-area">
-                    <div class="blog-img">
-                        <a href="blog-details.html">
-                            <img src="assets/img/blog/3.png" alt="blog image">
-                        </a>
-                    </div>
-                    <div class="blog-text">
-                        <h4><a href="blog-details.html">Self cleaning is the best drill</a></h4>
-                        <ul>
-                            <li>
-                                <i class="icofont-calendar"></i>
-                                20 Feb 2021
-                            </li>
-                            <li>
-                                <i class="icofont-ui-user"></i>
-                                <a href="#">John Doe</a>
-                            </li>
-                        </ul>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc ut
-                            labore.</p>
-                        <a href="blog-details.html" class="blog-btn">
-                            Read more
-                            <i class="icofont-rounded-right"></i>
-                        </a>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="work-stap">
+                        <div class="work-stap-img">
+                            <i><img alt="img" src="<?= base_url('assets/'); ?>img/works-icon-3.png"></i>
+                            <span>3</span>
+                        </div>
+                        <h3>Expert Processing</h3>
+                        <p>Choose when and where you wish us to collect & deliver your laundry.</p>
                     </div>
                 </div>
-                <div class="blog-area">
-                    <div class="blog-img">
-                        <a href="blog-details.html">
-                            <img src="assets/img/blog/1.png" alt="blog image">
-                        </a>
-                    </div>
-                    <div class="blog-text">
-                        <h4><a href="blog-details.html">How to cleanroom yourself</a></h4>
-                        <ul>
-                            <li>
-                                <i class="icofont-calendar"></i>
-                                20 Feb 2021
-                            </li>
-                            <li>
-                                <i class="icofont-ui-user"></i>
-                                <a href="#">John Doe</a>
-                            </li>
-                        </ul>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc ut
-                            labore.</p>
-                        <a href="blog-details.html" class="blog-btn">
-                            Read more
-                            <i class="icofont-rounded-right"></i>
-                        </a>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="work-stap two mb-0">
+                        <div class="work-stap-img">
+                            <i><img alt="img" src="<?= base_url('assets/'); ?>img/works-icon-4.png"></i>
+                            <span>4</span>
+                        </div>
+                        <h3>We Deliver</h3>
+                        <p>We bring back your freshly cleaned and rejuvenated clothes</p>
                     </div>
                 </div>
-                <div class="blog-area">
-                    <div class="blog-img">
-                        <a href="blog-details.html">
-                            <img src="assets/img/blog/2.png" alt="blog image">
-                        </a>
+                <div class="btn-center">
+                    <a href="javascript:void(0)" class="sec-btn lightbox-toggle">Schedule a Pickup</a>
+                </div>
+            </div>
+            <img src="<?= base_url('assets/'); ?>img/line.png" class="works-line" alt="line" data-aos="fade-right" data-aos-delay="700" data-aos-duration="1500">
+        </div>
+        </div>
+    </section>
+    <section class="gap">
+        <div class="container">
+            <div class="new-laundry">
+                <div>
+                    <div class="heading two">
+                        <p>New Laundry Service Near You</p>
+                        <h3>A Gentle Solution for The Environment, and For Your Wallet</h3>
                     </div>
-                    <div class="blog-text">
-                        <h4><a href="blog-details.html">Enjoy the working time</a></h4>
-                        <ul>
-                            <li>
-                                <i class="icofont-calendar"></i>
-                                20 Feb 2021
-                            </li>
-                            <li>
-                                <i class="icofont-ui-user"></i>
-                                <a href="#">John Doe</a>
-                            </li>
-                        </ul>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc ut
-                            labore.</p>
-                        <a href="blog-details.html" class="blog-btn">
-                            Read more
-                            <i class="icofont-rounded-right"></i>
-                        </a>
+                    <form class="city-zip">
+                        <label>24-hour self-serve automated laundry service - open round the clock!</label>
+                        <div class="d-sm-flex">
+                            <input placeholder="City and Zip Code" type="text" name="City and Zip Code">
+                            <button class="sec-btn">find</button>
+                        </div>
+                    </form>
+                    <div class="d-flex align-items-center">
+                        <img src="<?= base_url('assets/'); ?>img/chake.png" alt="img">
+                        <h6>Highest quality and lowest price guaranteed.</h6>
                     </div>
                 </div>
-                <div class="blog-area">
-                    <div class="blog-img">
-                        <a href="blog-details.html">
-                            <img src="assets/img/blog/3.png" alt="blog image">
-                        </a>
-                    </div>
-                    <div class="blog-text">
-                        <h4><a href="blog-details.html">Self cleaning is the best drill</a></h4>
-                        <ul>
-                            <li>
-                                <i class="icofont-calendar"></i>
-                                20 Feb 2021
-                            </li>
-                            <li>
-                                <i class="icofont-ui-user"></i>
-                                <a href="#">John Doe</a>
-                            </li>
-                        </ul>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc ut
-                            labore.</p>
-                        <a href="blog-details.html" class="blog-btn">
-                            Read more
-                            <i class="icofont-rounded-right"></i>
-                        </a>
-                    </div>
+                <div class="new-laundry-img">
+                    <img alt="img" src="<?= base_url('assets/'); ?>img/new-laundry.jpg">
+                    <a data-fancybox="" href="https://www.youtube.com/watch?v=xKxrkht7CpY">
+                        <i>
+                            <svg width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 8.49951L0.5 0.27227L0.5 16.7268L11 8.49951Z" fill="white"></path>
+                            </svg>
+                        </i>
+                    </a>
                 </div>
-                <div class="blog-area">
-                    <div class="blog-img">
-                        <a href="blog-details.html">
-                            <img src="assets/img/blog/1.png" alt="blog image">
-                        </a>
+            </div>
+            <div class="count-style">
+                <div class="count-text">
+                    <div class="d-flex justify-content-center">
+                        <h2 class="count" data-number="12"></h2>
+                        <span>M</span>
                     </div>
-                    <div class="blog-text">
-                        <h4><a href="#">How to cleanroom yourself</a></h4>
-                        <ul>
-                            <li>
-                                <i class="icofont-calendar"></i>
-                                20 Feb 2021
-                            </li>
-                            <li>
-                                <i class="icofont-ui-user"></i>
-                                <a href="#">John Doe</a>
-                            </li>
-                        </ul>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc ut
-                            labore.</p>
-                        <a href="blog-details.html" class="blog-btn">
-                            Read more
-                            <i class="icofont-rounded-right"></i>
-                        </a>
-                    </div>
+                    <h3 class="text">Garments laundered last year</h3>
                 </div>
-                <div class="blog-area">
-                    <div class="blog-img">
-                        <a href="#">
-                            <img src="assets/img/blog/2.png" alt="blog image">
-                        </a>
+                <div class="boder"></div>
+                <div class="count-text">
+                    <div class="d-flex justify-content-center">
+                        <h2 class="count" data-number="850"></h2>
+                        <span>K</span>
                     </div>
-                    <div class="blog-text">
-                        <h4><a href="#">Enjoy the working time</a></h4>
-                        <ul>
-                            <li>
-                                <i class="icofont-calendar"></i>
-                                20 Feb 2021
-                            </li>
-                            <li>
-                                <i class="icofont-ui-user"></i>
-                                <a href="#">John Doe</a>
-                            </li>
-                        </ul>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc ut
-                            labore.</p>
-                        <a href="blog-details.html" class="blog-btn">
-                            Read more
-                            <i class="icofont-rounded-right"></i>
-                        </a>
-                    </div>
+                    <h3 class="text">Garments in circulation</h3>
                 </div>
-                <div class="blog-area">
-                    <div class="blog-img">
-                        <a href="#">
-                            <img src="assets/img/blog/3.png" alt="blog image">
-                        </a>
+                <div class="boder"></div>
+                <div class="count-text mb-0">
+                    <div class="d-flex justify-content-center">
+                        <h2 class="count" data-number="99"></h2>
+                        <span>%</span>
                     </div>
-                    <div class="blog-text">
-                        <h4><a href="#">Self cleaning is the best drill</a></h4>
-                        <ul>
-                            <li>
-                                <i class="icofont-calendar"></i>
-                                20 Feb 2021
-                            </li>
-                            <li>
-                                <i class="icofont-ui-user"></i>
-                                <a href="#">John Doe</a>
-                            </li>
-                        </ul>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc ut
-                            labore.</p>
-                        <a href="blog-details.html" class="blog-btn">
-                            Read more
-                            <i class="icofont-rounded-right"></i>
-                        </a>
-                    </div>
+                    <h3 class="text">Customer satisfaction with products</h3>
                 </div>
             </div>
         </div>
     </section>
-
-
-    <div class="contact-section">
+    <section class="price-package gap" style="background-image:url(<?= base_url('assets/'); ?>img/price-package.png)">
         <div class="container">
-            <div class="contact-area">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="contact-img">
-                            <img src="assets/img/contact-img.png" alt="contact image">
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="contact-text">
-                            <div class="section-head">
-                                <h2>We Love to <span> Hear from You</span></h2>
-                                <p>Feel free and share with us. We will get you</p>
-                            </div>
-                            <div class="contact-form">
-                                <form id="contactForm">
-                                    <div class="row">
-                                        <div class="col-md-12 col-sm-6">
-                                            <div class="form-group">
-                                                <input type="text" name="name" id="name" class="form-control" required data-error="Please enter your name" placeholder="Your Name">
-                                                <div class="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12 col-sm-6">
-                                            <div class="form-group">
-                                                <input type="email" name="email" id="email" class="form-control" required data-error="Please enter your email" placeholder="Your Email">
-                                                <div class="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12">
-                                            <div class="form-group">
-                                                <textarea name="message" class="form-control" id="message" cols="30" rows="5" required data-error="Write your message" placeholder="Your Message"></textarea>
-                                                <div class="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12">
-                                            <button type="submit" class="default-btn page-btn">
-                                                Send Message
-                                            </button>
-                                            <div id="msgSubmit" class="h3 text-center hidden"></div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="heading">
+                <img src="<?= base_url('assets/'); ?>img/heading-img.png" alt="heading-img">
+                <p>What we offer</p>
+                <h2>Price Packages</h2>
             </div>
-        </div>
-    </div>
-
-
-    <footer class="footer-area">
-        <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-widget">
-                        <div class="logo">
-                            <a href="index.html">
-                                <img src="assets/img/logo-2.png" alt="logo">
-                            </a>
+                <div class="col-lg-4 col-md-6">
+                    <div class="package">
+                        <div class="package-top">
+                            <h6>Dry Cleaning</h6>
+                            <h2>$40 <span>/ 06 CLOTHES</span></h2>
+                            <i>
+                                <svg enable-background="new 0 0 512.02 512.02" height="512" viewBox="0 0 512.02 512.02" width="512" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path d="m96.01 400.02c8.836 0 16-7.164 16-16 0-35.312 28.572-64 64-64 8.836 0 16-7.164 16-16s-7.164-16-16-16c-35.312 0-64-28.572-64-64 0-8.836-7.164-16-16-16s-16 7.164-16 16c0 35.302-28.568 64-64 64-8.836 0-16 7.164-16 16s7.164 16 16 16c35.29 0 64 28.71 64 64 0 8.836 7.163 16 16 16zm0-122.884c6.988 10.479 16.15 19.728 26.883 26.884-10.611 7.076-19.836 16.298-26.918 26.934-7.09-10.648-16.252-19.81-26.901-26.9 10.267-6.836 19.615-15.938 26.936-26.918z" />
+                                        <path d="m483.507 56.948-50.286-22.344-29.894-29.894c-2.306-2.308-5.496-4.008-9.061-4.513-1.909-.271-194.585-.221-195.837-.097-2.034.2-4.137.835-5.962 1.811-2.815 1.51-1.359.384-33.669 32.694l-50.294 22.348c-17.31 7.703-28.494 24.921-28.494 43.867v75.2c0 8.836 7.164 16 16 16s16-7.164 16-16v-75.2c0-6.319 3.731-12.063 9.497-14.628l37.483-16.655 42.038 112.102c3.815 10.172 16.479 13.674 24.977 6.875l54.005-43.204v334.71h-152c-8.822 0-16-7.178-16-16v-32c0-8.836-7.164-16-16-16s-16 7.164-16 16v32c0 26.467 21.533 48 48 48h336c26.467 0 48-21.533 48-48v-363.2c0-18.946-11.185-36.164-28.503-43.872zm-187.497 32.445-57.373-57.373h114.746zm96-50.746 13.401 13.401-36.635 97.694-48.812-39.049zm-168.766 111.095-36.635-97.694 13.401-13.401 72.046 72.046zm256.766 314.278c0 8.822-7.178 16-16 16h-152v-334.71l54.005 43.204c8.489 6.792 21.158 3.306 24.977-6.875l42.038-112.103 37.475 16.651c5.774 2.57 9.505 8.313 9.505 14.632z" />
+                                        <circle cx="344.01" cy="264.02" r="16" />
+                                        <circle cx="344.01" cy="392.02" r="16" />
+                                    </g>
+                                </svg>
+                            </i>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, tur adipiscing elit, sed do eiusmod tempor contratc.</p>
-                        <div class="email">
-                            <form class="newsletter-form" data-bs-toggle="validator">
-                                <input type="email" class="form-control" placeholder="Enter Your Email" name="EMAIL" required autocomplete="off">
-                                <button class="default-btn electronics-btn" type="submit">
-                                    <i class="icofont-location-arrow"></i>
-                                </button>
-                                <div id="validator-newsletter" class="form-result"></div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-widget pl-40">
-                        <h3>Services</h3>
-                        <ul>
-                            <li>
-                                <i class="icofont-simple-right"></i>
-                                <a href="service-details.html">Low Cost</a>
-                            </li>
-                            <li>
-                                <i class="icofont-simple-right"></i>
-                                <a href="service-details.html">Fastest Service</a>
-                            </li>
-                            <li>
-                                <i class="icofont-simple-right"></i>
-                                <a href="service-details.html">Professional Cleaning</a>
-                            </li>
-                            <li>
-                                <i class="icofont-simple-right"></i>
-                                <a href="service-details.html">Home Cleaning</a>
-                            </li>
-                            <li>
-                                <i class="icofont-simple-right"></i>
-                                <a href="service-details.html">Office Cleaning</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-widget pl-40">
-                        <h3>Quick Links</h3>
-                        <ul>
-                            <li>
-                                <i class="icofont-simple-right"></i>
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li>
-                                <i class="icofont-simple-right"></i>
-                                <a href="about.html">About Us</a>
-                            </li>
-                            <li>
-                                <i class="icofont-simple-right"></i>
-                                <a href="blog.html">Blog</a>
-                            </li>
-                            <li>
-                                <i class="icofont-simple-right"></i>
-                                <a href="team.html">Team</a>
-                            </li>
-                            <li>
-                                <i class="icofont-simple-right"></i>
-                                <a href="testimonial.html">Testimonial</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-widget">
-                        <h3>Find Us</h3>
-                        <p class="find-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed</p>
-                        <ul class="find-us">
-                            <li>
-                                <i class="icofont-location-pin"></i>
-                                28/A Street, New York City
-                            </li>
-                            <li>
-                                <i class="icofont-phone"></i>
-                                <a href="tel:+880123456789">
-                                    +88 0123 456 789
-                                </a>
-                            </li>
-                            <li>
-                                <i class="icofont-ui-message"></i>
-                                <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#c5acaba3aa85b3acb6a6aab0b6eba6aaa8">
-                                    <span class="__cf_email__" data-cfemail="acc5c2cac3ecdac5dfcfc3d9df82cfc3c1">[email&#160;protected]</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bottom-footer">
-            <div class="container">
-                <div class="row  align-items-center">
-                    <div class="col-lg-6">
-                        <div class="footer-social">
+                        <div class="package-bottom">
                             <ul>
-                                <li>
-                                    <a href="#"><i class="icofont-facebook"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="icofont-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="icofont-linkedin"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="icofont-instagram"></i></a>
-                                </li>
+                                <li><img alt="check" src="<?= base_url('assets/'); ?>img/check.png">50 Clothes Every Month</li>
+                                <li><img alt="check" src="<?= base_url('assets/'); ?>img/check.png">Cleaning good for clothes</li>
+                                <li><img alt="check" src="<?= base_url('assets/'); ?>img/check.png">30 Clothes Dryclean</li>
+                                <li><img alt="check" src="<?= base_url('assets/'); ?>img/check.png">10 Clothes iron</li>
+                                <li><img alt="check" src="<?= base_url('assets/'); ?>img/check.png">Only 1 Bed Sheet Set</li>
+                            </ul>
+                            <a href="#" class="sec-btn">Purchase Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="package two">
+                        <div class="package-top">
+                            <h6>Dry Clean / Laundery</h6>
+                            <h2>$80 <span>/ 06 CLOTHES</span></h2>
+                            <i><svg enable-background="new 0 0 512.02 512.02" height="512" viewBox="0 0 512.02 512.02" width="512" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path d="m96.01 400.02c8.836 0 16-7.164 16-16 0-35.312 28.572-64 64-64 8.836 0 16-7.164 16-16s-7.164-16-16-16c-35.312 0-64-28.572-64-64 0-8.836-7.164-16-16-16s-16 7.164-16 16c0 35.302-28.568 64-64 64-8.836 0-16 7.164-16 16s7.164 16 16 16c35.29 0 64 28.71 64 64 0 8.836 7.163 16 16 16zm0-122.884c6.988 10.479 16.15 19.728 26.883 26.884-10.611 7.076-19.836 16.298-26.918 26.934-7.09-10.648-16.252-19.81-26.901-26.9 10.267-6.836 19.615-15.938 26.936-26.918z" />
+                                        <path d="m483.507 56.948-50.286-22.344-29.894-29.894c-2.306-2.308-5.496-4.008-9.061-4.513-1.909-.271-194.585-.221-195.837-.097-2.034.2-4.137.835-5.962 1.811-2.815 1.51-1.359.384-33.669 32.694l-50.294 22.348c-17.31 7.703-28.494 24.921-28.494 43.867v75.2c0 8.836 7.164 16 16 16s16-7.164 16-16v-75.2c0-6.319 3.731-12.063 9.497-14.628l37.483-16.655 42.038 112.102c3.815 10.172 16.479 13.674 24.977 6.875l54.005-43.204v334.71h-152c-8.822 0-16-7.178-16-16v-32c0-8.836-7.164-16-16-16s-16 7.164-16 16v32c0 26.467 21.533 48 48 48h336c26.467 0 48-21.533 48-48v-363.2c0-18.946-11.185-36.164-28.503-43.872zm-187.497 32.445-57.373-57.373h114.746zm96-50.746 13.401 13.401-36.635 97.694-48.812-39.049zm-168.766 111.095-36.635-97.694 13.401-13.401 72.046 72.046zm256.766 314.278c0 8.822-7.178 16-16 16h-152v-334.71l54.005 43.204c8.489 6.792 21.158 3.306 24.977-6.875l42.038-112.103 37.475 16.651c5.774 2.57 9.505 8.313 9.505 14.632z" />
+                                        <circle cx="344.01" cy="264.02" r="16" />
+                                        <circle cx="344.01" cy="392.02" r="16" />
+                                    </g>
+                                </svg>
+                            </i>
+                        </div>
+                        <div class="package-bottom">
+                            <ul>
+                                <li><img alt="img" src="<?= base_url('assets/'); ?>img/check.png">50 Clothes Every Month</li>
+                                <li><img alt="img" src="<?= base_url('assets/'); ?>img/check.png">Cleaning good for clothes</li>
+                                <li><img alt="img" src="<?= base_url('assets/'); ?>img/check.png">30 Clothes Dryclean</li>
+                                <li><img alt="img" src="<?= base_url('assets/'); ?>img/check.png">10 Clothes iron</li>
+                                <li><img alt="img" src="<?= base_url('assets/'); ?>img/check.png">Only 1 Bed Sheet Set</li>
+                            </ul>
+                            <a href="#" class="sec-btn">Purchase Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="package mb-0">
+                        <div class="package-top">
+                            <h6>Dry Clean / Iron / Fold</h6>
+                            <h2>$120 <span>/ 06 CLOTHES</span></h2>
+                            <i><svg enable-background="new 0 0 512.02 512.02" height="512" viewBox="0 0 512.02 512.02" width="512" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path d="m96.01 400.02c8.836 0 16-7.164 16-16 0-35.312 28.572-64 64-64 8.836 0 16-7.164 16-16s-7.164-16-16-16c-35.312 0-64-28.572-64-64 0-8.836-7.164-16-16-16s-16 7.164-16 16c0 35.302-28.568 64-64 64-8.836 0-16 7.164-16 16s7.164 16 16 16c35.29 0 64 28.71 64 64 0 8.836 7.163 16 16 16zm0-122.884c6.988 10.479 16.15 19.728 26.883 26.884-10.611 7.076-19.836 16.298-26.918 26.934-7.09-10.648-16.252-19.81-26.901-26.9 10.267-6.836 19.615-15.938 26.936-26.918z" />
+                                        <path d="m483.507 56.948-50.286-22.344-29.894-29.894c-2.306-2.308-5.496-4.008-9.061-4.513-1.909-.271-194.585-.221-195.837-.097-2.034.2-4.137.835-5.962 1.811-2.815 1.51-1.359.384-33.669 32.694l-50.294 22.348c-17.31 7.703-28.494 24.921-28.494 43.867v75.2c0 8.836 7.164 16 16 16s16-7.164 16-16v-75.2c0-6.319 3.731-12.063 9.497-14.628l37.483-16.655 42.038 112.102c3.815 10.172 16.479 13.674 24.977 6.875l54.005-43.204v334.71h-152c-8.822 0-16-7.178-16-16v-32c0-8.836-7.164-16-16-16s-16 7.164-16 16v32c0 26.467 21.533 48 48 48h336c26.467 0 48-21.533 48-48v-363.2c0-18.946-11.185-36.164-28.503-43.872zm-187.497 32.445-57.373-57.373h114.746zm96-50.746 13.401 13.401-36.635 97.694-48.812-39.049zm-168.766 111.095-36.635-97.694 13.401-13.401 72.046 72.046zm256.766 314.278c0 8.822-7.178 16-16 16h-152v-334.71l54.005 43.204c8.489 6.792 21.158 3.306 24.977-6.875l42.038-112.103 37.475 16.651c5.774 2.57 9.505 8.313 9.505 14.632z" />
+                                        <circle cx="344.01" cy="264.02" r="16" />
+                                        <circle cx="344.01" cy="392.02" r="16" />
+                                    </g>
+                                </svg>
+                            </i>
+                        </div>
+                        <div class="package-bottom">
+                            <ul>
+                                <li><img alt="img" src="<?= base_url('assets/'); ?>img/check.png">50 Clothes Every Month</li>
+                                <li><img alt="img" src="<?= base_url('assets/'); ?>img/check.png">Cleaning good for clothes</li>
+                                <li><img alt="img" src="<?= base_url('assets/'); ?>img/check.png">30 Clothes Dryclean</li>
+                                <li><img alt="img" src="<?= base_url('assets/'); ?>img/check.png">10 Clothes iron</li>
+                                <li><img alt="img" src="<?= base_url('assets/'); ?>img/check.png">Only 1 Bed Sheet Set</li>
+                            </ul>
+                            <a href="#" class="sec-btn">Purchase Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container-fluid">
+        <div class="offset-lg-1 col-lg-11">
+            <div class="dryclean refer-friend" style="background-image:url(<?= base_url('assets/'); ?>img/balloon-1.jpg)">
+                <div>
+                    <div class="heading two">
+                        <p>landry and dryclean application</p>
+                        <h2 class="pb-0">Laundry Service For Your Business!</h2>
+                    </div>
+                    <ul class="list-style">
+                        <li>
+                            <div class="bol"></div>A professional laundry and dry cleaners
+                        </li>
+                        <li>
+                            <div class="bol"></div>High-tech, high-touch dry cleaning service
+                        </li>
+                        <li>
+                            <div class="bol"></div>Exclusive offers & discounts
+                        </li>
+                    </ul>
+                    <div class="d-flex position-relative">
+                        <a href="#" class="pe-3">
+                            <img class="google-play" src="<?= base_url('assets/'); ?>img/google-play.png" alt="google-play">
+                        </a>
+                        <a href="#">
+                            <img class="google-play" src="<?= base_url('assets/'); ?>img/apple.png" alt="google-play">
+                        </a>
+                    </div>
+                </div>
+                <div class="refer-friend-img position-relative">
+                    <img src="<?= base_url('assets/'); ?>img/bus.png" alt="bus">
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="gap">
+        <div class="container">
+            <div class="heading">
+                <img src="<?= base_url('assets/'); ?>img/heading-img.png" alt="heading-img">
+                <p>Blog a & News</p>
+                <h2>Recent Articles</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-data">
+                        <div class="blog-img position-relative">
+                            <figure>
+                                <img src="<?= base_url('assets/'); ?>img/blog-1.jpg" alt="blog">
+                            </figure>
+                            <div class="data">
+                                <h4>December 15, 2023</h4>
+                                <a href="#"><img src="<?= base_url('assets/'); ?>img/camment.png" alt="camment">14</a>
+                            </div>
+                        </div>
+                        <a href="blog-details.html">
+                            <h3>What Kind of Fabrics Really Need Dry Cleaning</h3>
+                        </a>
+                        <p>Stanard dummy text ever snce the aem Ipsumf. the printingand ypese inghas bemmyen the supim. Stanard dummy text ever snce.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-data">
+                        <div class="blog-img position-relative">
+                            <figure>
+                                <img src="<?= base_url('assets/'); ?>img/blog-2.jpg" alt="blog">
+                            </figure>
+                            <div class="data">
+                                <h4>December 15, 2023</h4>
+                                <a href="#"><img src="<?= base_url('assets/'); ?>img/camment.png" alt="camment">14</a>
+                            </div>
+                        </div>
+                        <a href="blog-details.html">
+                            <h3>Wash Your Workwear To Make Them Last Longer?</h3>
+                        </a>
+                        <p>Stanard dummy text ever snce the aem Ipsumf. the printingand ypese inghas bemmyen the supim. Stanard dummy text ever snce.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-data mb-0">
+                        <div class="blog-img position-relative">
+                            <figure>
+                                <img src="<?= base_url('assets/'); ?>img/blog-3.jpg" alt="blog">
+                            </figure>
+                            <div class="data">
+                                <h4>December 15, 2023</h4>
+                                <a href="#"><img src="<?= base_url('assets/'); ?>img/camment.png" alt="camment">14</a>
+                            </div>
+                        </div>
+                        <a href="blog-details.html">
+                            <h3>Clothes Will Be Collected, Cleaned And Delivered</h3>
+                        </a>
+                        <p>Stanard dummy text ever snce the aem Ipsumf. the printingand ypese inghas bemmyen the supim. Stanard dummy text ever snce.</p>
+                    </div>
+                </div>
+                <div class="btn-center">
+                    <a href="our-blog.html" class="sec-btn">View All News</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="heading">
+                <p>Client’s Review</p>
+                <h2 class="pb-0">What Our Client’s Say?</h2>
+                <div class="star-rating">
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <h6>5 Star Rating</h6>
+                </div>
+            </div>
+            <div class="slider-wrapper">
+                <div class="slider-nav">
+                    <div class="slider-nav__item">
+                        <img alt="img" src="<?= base_url('assets/'); ?>img/client-img-1.jpg">
+                    </div>
+                    <div class="slider-nav__item">
+                        <img alt="img" src="<?= base_url('assets/'); ?>img/client-img-2.jpg">
+                    </div>
+                    <div class="slider-nav__item">
+                        <img alt="img" src="<?= base_url('assets/'); ?>img/client-img-3.jpg">
+                    </div>
+                    <div class="slider-nav__item">
+                        <img alt="img" src="<?= base_url('assets/'); ?>img/client-img-4.jpg">
+                    </div>
+                    <div class="slider-nav__item">
+                        <img alt="img" src="<?= base_url('assets/'); ?>img/client-img-5.jpg">
+                    </div>
+                </div>
+                <div class="slider-for testimonials">
+                    <div class="slider-for__item ex1 client">
+                        <h5>“ They always come one time, very easy to place your order any time in the day , very trusted company.The best dry clean company ever, I would recommend digital dry clean for everyone. ”</h5>
+                        <h3>Thomas Willimes</h3>
+                        <div class="star-rating">
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="copyright-text text-end">
-                            <p>&copy;2022 Viscous. All Rights Reserved By <a href="https://hibootstrap.com/" target="_blank">HiBootstrap</a></p>
+                    <div class="slider-for__item ex1 client">
+                        <h5>“ The best dry clean company ever, they always come one time, very easy to place your order any time in the day , very trusted company. I would recommend digital dry clean for everyone. ”</h5>
+                        <h3>Thomas Willimes</h3>
+                        <div class="star-rating">
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="slider-for__item ex1 client">
+                        <h5>“ They always come one time, very easy to place your order any time in the day , very trusted company.The best dry clean company ever, I would recommend digital dry clean for everyone. ”</h5>
+                        <h3>Thomas Willimes</h3>
+                        <div class="star-rating">
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="slider-for__item ex1 client">
+                        <h5>“ The best dry clean company ever, they always come one time, very easy to place your order any time in the day , very trusted company. I would recommend digital dry clean for everyone. ”</h5>
+                        <h3>Thomas Willimes</h3>
+                        <div class="star-rating">
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="slider-for__item ex1 client">
+                        <h5>“ They always come one time, very easy to place your order any time in the day , very trusted company.The best dry clean company ever, I would recommend digital dry clean for everyone. ”</h5>
+                        <h3>Thomas Willimes</h3>
+                        <div class="star-rating">
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
-
-
-    <div class="top-btn">
-        <i class="icofont-scroll-long-up"></i>
+    </section>
+    <div class="clients-logo gap">
+        <div class="container">
+            <div class="logodata owl-carousel owl-theme">
+                <div class="partner item">
+                    <img alt="clients-logo" src="<?= base_url('assets/'); ?>img/client-1.png">
+                </div>
+                <div class="partner item">
+                    <img alt="clients-logo" src="<?= base_url('assets/'); ?>img/client-2.png">
+                </div>
+                <div class="partner item">
+                    <img alt="clients-logo" src="<?= base_url('assets/'); ?>img/client-3.png">
+                </div>
+                <div class="partner item">
+                    <img alt="clients-logo" src="<?= base_url('assets/'); ?>img/client-4.png">
+                </div>
+                <div class="partner item">
+                    <img alt="clients-logo" src="<?= base_url('assets/'); ?>img/client-5.png">
+                </div>
+                <div class="partner item">
+                    <img alt="clients-logo" src="<?= base_url('assets/'); ?>img/client-6.png">
+                </div>
+            </div>
+        </div>
     </div>
-
-    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="assets/js/jquery.min.js"></script>
-
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-
-    <script src="assets/js/owl.carousel.min.js"></script>
-
-    <script src="assets/js/slick.min.js"></script>
-
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-
-    <script src="assets/js/meanmenu.js"></script>
-
-    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
-
-    <script src="assets/js/form-validator.min.js"></script>
-
-    <script src="assets/js/contact-form-script.js"></script>
-
-    <script src="assets/js/custom.js"></script>
-</body>
-
-<!-- Mirrored from templates.hibootstrap.com/viscous/default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 May 2024 14:27:56 GMT -->
-
-</html>

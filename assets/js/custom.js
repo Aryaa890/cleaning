@@ -1,51 +1,47 @@
-(function($){
-	"use strict";
+/*-----------------------------------------------------------------------------------
 
-    //MEAN MENU
-    $('.mean-menu').meanmenu({
-        meanScreenWidth: "991"
-    });
+    Template Name: Cleanio - Laundry And Cleaning
 
-    //Navbar Sticky
-    $(window).on('scroll',function() {
-        if ($(this).scrollTop()>120){  
-            $('.navbar-area').addClass("is-sticky");
-        }
-        else{
-            $('.navbar-area').removeClass("is-sticky");
-        }
-    });
+    Note: This is Custom Js file
 
-    //SEARCH JS
-    $('.search-option button').on('click',function(){
-        $('.search-input').toggle(200)
-    })
+-----------------------------------------------------------------------------------
 
-    //HOME SLIDER JS
-    $('.home-slider-area').owlCarousel({
+    [Table of contents]
+
+    01. slider-home-1
+    02. service-slider
+    03. logodata
+    04. client-slider
+    05. slider-for
+    06. mobile-nav
+    07. count
+    08. overlay
+    09. accordion-item
+    10. scrollTop
+    11. Preloader
+
+-----------------------------------------------------------------------------------*/
+
+jQuery(document).ready(function($){
+    if ( $.isFunction($.fn.owlCarousel) ) {
+    /* 01. slider-home-1 */
+    $('.slider-home-1').owlCarousel({
         loop:true,
-        margin:0,
+        arrows:false,
+        dot:true,
+        autoplay:true,
+        animateIn: 'fadeIn',
+        animateOut: 'fadeOut',
+        mouseDrag:false,
+        items:1
+      })
+    /* 02. service-slider */
+        $('.service-slider').owlCarousel({
+        loop:true,
+        dot:true,
         nav:true,
-        navText:[
-            "<i class='icofont-rounded-double-left'></i>",
-            "<i class='icofont-rounded-double-right'></i>"
-        ],
-        items:1,
-        smartSpeed:2000,
-        dots:true,
-        autoHeight:true
-    })
-
-    //BLOG SLIDER JS
-    $('.blog-slider').owlCarousel({
-        loop:true,
-        margin:30,
-        nav:false,
-        smartSpeed:2000,
-        dots:true,
-        items:1,
-        autoplayHoverPause:true,
-        stagePadding:10,
+        autoplay:true,
+        navText: ["<i class='fa-solid fa-angle-left'></i>","<i class='fa-solid fa-angle-right'></i>"],
         responsive:{
             0:{
                 items:1
@@ -53,257 +49,292 @@
             768:{
                 items:2
             },
-            1000:{
+            1360:{
                 items:3
             }
-        }
-    })
-
-    //TESTIMONIAL
-    $('.slider-for').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        draggable: false,
-        fade: true,
-        autoplay: true,
-        autoplaySpeed:1500,
-        asNavFor: '.slider-nav'
-    });
-    
-    $('.slider-nav').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: '.slider-for',
-        dots:false,
-        arrows: true,
-        centerMode: true,
-        autoplay: true,
-        focusOnSelect: true,
-        centerPadding: '10px',
-        responsive: [
-            {
-              breakpoint: 450,
-              settings: {
-                dots: false,
-                slidesToShow: 3,  
-                centerPadding: '0px',
-                }
-            },
-            {
-              breakpoint: 420,
-              settings: {
-                autoplay: true,
-                dots: false,
-                slidesToShow: 1,
-                centerMode: false,
-                }
-            }
-        ]
-    });
-
-    //HOME SLIDER JS
-    $('.recent-work-slider').owlCarousel({
+          }
+        })
+    /* 03. logodata */
+        $('.logodata').owlCarousel({
         loop:true,
-        margin:20,
+        dot:false,
         nav:false,
-        smartSpeed:2000,
-        autoplayHoverPause:true,
-        dots:true,
+        autoplay:true,
+        autoplayTimeout:3000,
         responsive:{
-            0:{
-                items:1
-            },
-            500:{
-                items:2
-            },
-            992:{
-                items:3
-            },
-            1199:{
-                items:5
-            }
+        0:{
+            items:1
+        },
+        480:{
+            items:2
+        },
+        800:{
+            items:3
+        },
+        1000:{
+            items:5
+        },
+        1400:{
+            items:6
         }
+      }
     })
-
-    //SERVICE SLIDER
-    $('.service-slider').owlCarousel({
+    /* 04. client-slider */
+    $('.client-slider').owlCarousel({
         loop:true,
-        margin:20,
-        nav:true,
-        navText:[
-            "<i class='icofont-rounded-double-left'></i>",
-            "<i class='icofont-rounded-double-right'></i>"
-        ],
-        smartSpeed:3000,
-        dots:false,
-        autoplay:false,
-        autoplayHoverPause:true,
-        autoplayTimeout:2000,
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:2
-            },
-            1000:{
-                items:3
+        dot:true,
+        arrows:false,
+        autoplay:true,
+        animateIn: 'fadeIn',
+        animateOut: 'fadeOut',
+        autoplayTimeout:4000,
+        items:1
+      })
+    }
+    /* 05. slider-for */
+    if ( $.isFunction($.fn.slick) ) {
+              $('.slider-for').slick({
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  arrows: false,
+                  fade: true,
+                  asNavFor: '.slider-nav'
+                });
+                $('.slider-nav').slick({
+                  slidesToShow: 5,
+                  slidesToScroll: 1,
+                  asNavFor: '.slider-for',
+                  dots: true,
+                  arrows:false,
+                  centerMode: false,
+                  focusOnSelect: true,
+                  responsive: [
+                            {
+                              breakpoint: 993,
+                              settings: {
+                                slidesToShow: 3,
+                              }
+                            },
+                            {
+                              breakpoint: 576,
+                              settings: {
+                                slidesToShow: 2,
+                              }
+                            },
+                            {
+                              breakpoint: 480,
+                              settings: {
+                                slidesToShow: 1,
+                              }
+                            }
+                          ]
+                });
             }
-        }
-    })
+    /* 06. mobile-nav */
+  jQuery('.mobile-nav .menu-item-has-children').on('click', function($) {
 
-    //service-slider-wrapper
-    $('.service-slider-wrapper').owlCarousel({
-        loop:true,
-        margin:30,
-        nav:true,
-        navText:[
-            "<i class='icofont-rounded-double-left'></i>",
-            "<i class='icofont-rounded-double-right'></i>"
-        ],
-        items:1,
-        smartSpeed:2000,
-        dots:false,
-    })
+          jQuery(this).toggleClass('active');
 
-    //PROJECT POPUP 
-    $('.popup-gallery').magnificPopup({
-        type: 'image',
-    });
+        }); 
 
-    //PROJECT SLIDER
-    $('.recent-project-slider').owlCarousel({
-        loop:true,
-        margin:20,
-        nav:true,
-        navText:[
-            "<i class='icofont-rounded-double-left'></i>",
-            "<i class='icofont-rounded-double-right'></i>"
-        ],
-        smartSpeed:2000,
-        dots:false,
-        autoplayHoverPause:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            500:{
-                items:2
-            },
-            768:{
-                items:3
-            },
-            1024:{
-                items:4
-            },
-            1200:{
-                items:5
-            }
-        }
-    });
+        jQuery('#nav-icon4').click(function($){
 
-    //Back To Top
-    $(window).on('load',function(){
-        $('.top-btn').fadeOut();
-    });
-    
-    $(window).scroll(function () {
-        if ($(this).scrollTop() != 0) {
-                $('.top-btn').fadeIn();
-            }
-        else {
-            $('.top-btn').fadeOut();
-        }
-    });
+            jQuery('#mobile-nav').toggleClass('open');
 
-    $('.top-btn').on('click',function(){
-        $("html, body").animate({ scrollTop: 0 }, 1000);
-        return false;
-    });
+        });
 
-    //PRE LOADER
-    $(window).on('load',function(){
-        $(".loader-content").fadeOut(1000);
-    }) 
+        jQuery('#res-cross').click(function($){
 
-    // Subscribe form
-    $(".newsletter-form").validator().on("submit", function (event) {
-        if (event.isDefaultPrevented()) {
-        // handle the invalid form...
-            formErrorSub();
-            submitMSGSub(false, "Please enter your email correctly.");
-        } 
-        else {
-            // everything looks good!
-            event.preventDefault();
-        }
-    });
-    function callbackFunction (resp) {
-        if (resp.result === "success") {
-            formSuccessSub();
-        }
-        else {
-            formErrorSub();
-        }
+           jQuery('#mobile-nav').removeClass('open');
+
+        });
+
+
+        jQuery('.bar-menu').click(function($){
+
+            jQuery('#mobile-nav').toggleClass('open');
+            jQuery('#mobile-nav').toggleClass('hmburger-menu');
+            jQuery('#mobile-nav').show();
+
+        });
+
+        jQuery('#res-cross').click(function($){
+
+           jQuery('#mobile-nav').removeClass('open');
+
+        });
+  }) ;
+
+/* 07. count */
+let count = document.querySelectorAll(".count");
+let arr = Array.from(count);
+
+arr.map(function (item) {
+  let startnumber = 0;
+
+  function counterup() {
+    startnumber++;
+    item.innerHTML = startnumber;
+
+    if (startnumber == item.dataset.number) {
+      clearInterval(stop);
     }
-    function formSuccessSub(){
-        $(".newsletter-form")[0].reset();
-        submitMSGSub(true, "Thank you for subscribing!");
-        setTimeout(function() {
-            $("#validator-newsletter").addClass('hide');
-        }, 4000)
-    }
-    function formErrorSub(){
-        $(".newsletter-form").addClass("animated shake");
-        setTimeout(function() {
-            $(".newsletter-form").removeClass("animated shake");
-        }, 1000)
-    }
-    function submitMSGSub(valid, msg){
-        if(valid){
-            var msgClasses = "validation-success";
-        } 
-        else {
-            var msgClasses = "validation-danger";
-        }
-        $("#validator-newsletter").removeClass().addClass(msgClasses).text(msg);
-    }
-    
-    // AJAX MailChimp
-    $(".newsletter-form").ajaxChimp({
-        url: "https://HiBootstrap.us20.list-manage.com/subscribe/post?u=60e1ffe2e8a68ce1204cd39a5&amp;id=42d6d188d9", // Your url MailChimp
-        callback: callbackFunction
-    });
+  }
+  let stop = setInterval(function () {
+    counterup();
+  }, 10);
+});
 
-    // Buy Now Btn
-    $('body').append("<a href='https://themeforest.net/checkout/from_item/26055429?license=regular&support=bundle_6month&_ga=2.151831097.1464546313.1649253347-1356931366.1645330919&_gac=1.154672714.1649351773.Cj0KCQjwl7qSBhD-ARIsACvV1X34Yvc4XKSYFq60iQ6auDlKjNhJLJW5j_1joCsZJCKQ-4m75Uw8RNcaArtlEALw_wcB' target='_blank' class='buy-now-btn'><img src='assets/img/envato.png' alt='envato'/>Buy Now</a>");
+// count end
 
-    // Switch Btn
-	$('body').append("<div class='switch-box'><label id='switch' class='switch'><input type='checkbox' onchange='toggleTheme()' id='slider'><span class='slider round'></span></label></div>");
 
-}(jQuery));
+/* 08. overlay */
+        var boxWidth = $("#lightbox").width();
+                $(".white_content").animate({
+                    opacity: 0,
+                    width:0,
+                    left : -10000
+            });
+            $("#close").on('click',function(){ 
+            $(".white_content").animate({
+                opacity: 0,
+                width:0,
+                left : -1000
+            });
+            });
+            $("#show").on('click',function(){ 
+            $(".white_content").animate({
+                opacity: 1,
+                width:500,
+                left :0
+            });
+            $("#overlay").animate({
+                opacity: 1,
+                width:boxWidth,
+                left :0
+            });
 
-// function to set a given theme/color-scheme
-function setTheme(themeName) {
-    localStorage.setItem('viscous_theme', themeName);
-    document.documentElement.className = themeName;
-}
-// function to toggle between light and dark theme
-function toggleTheme() {
-    if (localStorage.getItem('viscous_theme') === 'theme-dark') {
-        setTheme('theme-light');
+        });
+
+
+/* 09. accordion-item */
+
+$('.accordion-item .heading').on('click', function(e) {
+    e.preventDefault();
+
+    if($(this).closest('.accordion-item').hasClass('active')) {
+        $('.accordion-item').removeClass('active');
     } else {
-        setTheme('theme-dark');
+        $('.accordion-item').removeClass('active');
+
+        $(this).closest('.accordion-item').addClass('active');
     }
+    var $content = $(this).next();
+    $content.slideToggle(100);
+    $('.accordion-item .content').not($content).slideUp('fast');
+});
+
+// end
+
+/* 10. scrollTop */
+
+function inVisible(element) {
+  //Checking if the element is
+  //visible in the viewport
+  var WindowTop = $(window).scrollTop();
+  var WindowBottom = WindowTop + $(window).height();
+  var ElementTop = element.offset().top;
+  var ElementBottom = ElementTop + element.height();
+  //animating the element if it is
+  //visible in the viewport
+  if ((ElementBottom <= WindowBottom) && ElementTop >= WindowTop)
+    animate(element);
 }
-// Immediately invoked function to set the theme on initial load
-(function () {
-    if (localStorage.getItem('viscous_theme') === 'theme-dark') {
-        setTheme('theme-dark');
-        document.getElementById('slider').checked = false;
-    } else {
-        setTheme('theme-light');
-    document.getElementById('slider').checked = true;
-    }
-})();
+
+function animate(element) {
+  //Animating the element if not animated before
+  if (!element.hasClass('ms-animated')) {
+    var maxval = element.data('max');
+    var html = element.html();
+    element.addClass("ms-animated");
+    $({
+      countNum: element.html()
+    }).animate({
+      countNum: maxval
+    }, {
+      //duration 5 seconds
+      duration: 5000,
+      easing: 'linear',
+      step: function() {
+        element.html(Math.floor(this.countNum) + html);
+      },
+      complete: function() {
+        element.html(this.countNum + html);
+      }
+    });
+  }
+
+}
+
+//When the document is ready
+$(function() {
+  //This is triggered when the
+  //user scrolls the page
+  $(window).scroll(function() {
+    //Checking if each items to animate are 
+    //visible in the viewport
+    $("h2[data-max]").each(function() {
+      inVisible($(this));
+    });
+  })
+});
+
+
+
+
+let calcScrollValue = () => {
+  let scrollProgress = document.getElementById("progress");
+  let progressValue = document.getElementById("progress-value");
+  let pos = document.documentElement.scrollTop;
+  let calcHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  let scrollValue = Math.round((pos * 100) / calcHeight);
+  if (pos > 100) {
+    scrollProgress.style.display = "grid";
+  } else {
+    scrollProgress.style.display = "none";
+  }
+  scrollProgress.addEventListener("click", () => {
+    document.documentElement.scrollTop = 0;
+  });
+  scrollProgress.style.background = `conic-gradient(#8cc63f ${scrollValue}%, #fff ${scrollValue}%)`;
+};
+
+window.onscroll = calcScrollValue;
+window.onload = calcScrollValue;
+
+// end
+
+
+/* 11. Preloader */ 
+        $(window).on('load', function () {
+            $("body").addClass("page-loaded");
+            ("loaded")
+        });
+
+// end
+/* 17. Click to close lightbox */
+          $('.close, .backdrop').on('click',function(){ 
+            $('.backdrop').
+
+            animate({'opacity':'0'}, 300, 'linear', function(){
+              $('.backdrop').css('display', 'none');
+            });
+            $('.box').fadeOut();
+          });
+
+$('.lightbox-toggle').on('click',function(){ 
+            $('.backdrop').animate({'opacity':'.50'}, 300, 'linear').css('display', 'block');
+            $('.box').fadeIn();
+          });
