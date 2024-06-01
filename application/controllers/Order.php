@@ -15,6 +15,8 @@ class Order extends CI_Controller
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
         $data['order_masuk'] = $this->db->get('order_masuk')->result_array();
 
+
+
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
         $this->load->view('templates/topbar', $data);
@@ -30,8 +32,17 @@ class Order extends CI_Controller
 
     public function hapusOrder($id)
     {
-        $where = ['id' => $this->uri->segment(3)];
-        $this->ModelOrder->hapusOrderanMasuk($where);
+        $this->load->model('ModelOrder');
+        $hapus = $this->ModelOrder->hapus($id);
+
+        $this->session->set_flashdata('flash', 'dihapus');
+        redirect('order');
+    }
+
+    public function lanjutorder($id)
+    {
+        $this->load->model('ModelOrder', TRUE);
+        $this->ModelOrder->lanjut($id);
         redirect('order');
     }
 }

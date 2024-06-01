@@ -38,7 +38,7 @@
                             <td><?= $om['tanggal']; ?></td>
                             <td><?= $om['komen']; ?></td>
                             <td colspan="2">
-                                <a href="" class="badge badge-pill badge-success " style="font-size:1rem;">✓</a>
+                                <a href="<?= base_url('order/lanjutorder/' . $om['id']); ?>" class="badge badge-pill badge-success" onclick="return confirm('Yakin?');" style="font-size:1rem;">✓</a>
                                 <a href="<?= base_url(); ?>order/hapusOrder/ <?= $om['id']; ?>" class="badge badge-pill badge-danger" onclick="return confirm('Yakin?');" style="font-size:1rem;">X</a>
                             </td>
                         </tr>
