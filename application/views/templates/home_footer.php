@@ -180,14 +180,16 @@
                     <div class="col-lg-12">
                         <input type="text" name="alamat" id="alamat" placeholder="Address">
                     </div>
-                    <div class="col-lg-12">
-                        <select class="nice-select Advice">
-                            <option>Services</option>
-                            <option>Services 1</option>
-                            <option>Services 2</option>
-                            <option>Services 3</option>
-                            <option>Services 4</option>
-                        </select>
+                    <div class="col-lg-8">
+                        <form>
+                            <select class="form-control" id="id_layanan" name="id_layanan">
+                                <?php foreach ($layanans as $layanan) : ?>
+                                    <option value="<?= $layanan['id']; ?>">
+                                        <?= $layanan['nama']; ?> <!-- Change 'layanan' to 'nama' -->
+                                    </option>
+                                <?php endforeach; ?>
+                            </select>
+                        </form>
                     </div>
                     <div class="col-lg-12">
                         <textarea placeholder="Comment" name="komen" id="komen"></textarea>

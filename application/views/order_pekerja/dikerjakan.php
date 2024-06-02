@@ -24,24 +24,25 @@
                         <th scope="col">Alamat</th>
                         <th scope="col">Tanggal Order</th>
                         <th scope="col">Komen</th>
-                        <th scope="col">Id Layanan</th>
+                        <th scope="col">Nama Pekerja</th>
+                        <th scope="col">Id layanan</th>
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php $i = 1; ?>
-                    <?php foreach ($order_masuk as $om) : ?>
+                    <?php foreach ($order_diambil as $od) : ?>
                         <tr>
                             <th scope="row"><?= $i; ?></th>
-                            <td><?= $om['nama']; ?></td>
-                            <td><?= $om['no_handphone']; ?></td>
-                            <td><?= $om['alamat']; ?></td>
-                            <td><?= $om['tanggal']; ?></td>
-                            <td><?= $om['komen']; ?></td>
-                            <td><?= $om['id_layanan']; ?></td>
+                            <td><?= $od['nama']; ?></td>
+                            <td><?= $od['no_handphone']; ?></td>
+                            <td><?= $od['alamat']; ?></td>
+                            <td><?= $od['tanggal']; ?></td>
+                            <td><?= $od['komen']; ?></td>
+                            <td><?= $od['nama_pekerja']; ?></td>
+                            <td><?= $od['id_layanan']; ?></td>
                             <td colspan="2">
-                                <a href="<?= base_url('order/lanjutorder/' . $om['id']); ?>" class="badge badge-pill badge-success" onclick="return confirm('Yakin?');" style="font-size:1rem;">✓</a>
-                                <a href="<?= base_url(); ?>order/hapusOrder/ <?= $om['id']; ?>" class="badge badge-pill badge-danger" onclick="return confirm('Yakin?');" style="font-size:1rem;">X</a>
+                                <a href="<?= base_url('order_pekerja/laporan/' . $od['id']); ?>" class="badge badge-pill badge-success" onclick="return confirm('Yakin?');" style="font-size:1rem;">✓</a>
                             </td>
                         </tr>
                         <?php $i++; ?>
