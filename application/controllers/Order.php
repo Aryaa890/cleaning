@@ -7,6 +7,8 @@ class Order extends CI_Controller
     {
         parent::__construct();
         is_logged_in();
+        // Load necessary libraries and models
+        $this->load->model('ModelOrder');
     }
 
     public function index()
@@ -14,6 +16,7 @@ class Order extends CI_Controller
         $data['title'] = 'Orderan Masuk';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
         $data['order_masuk'] = $this->db->get('order_masuk')->result_array();
+        $data['layanan'] = $this->db->get('layanan')->result_array();
 
 
 
@@ -43,6 +46,50 @@ class Order extends CI_Controller
     {
         $this->load->model('ModelOrder', TRUE);
         $this->ModelOrder->lanjut($id);
+        redirect('order');
+    }
+
+    public function ubahORder($id)
+    {
+
+
+        // Check if form is submitted
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            // Get form data
+            $nama = $this->input->post('nama');
+            $no_handphone = $this->input->post('no_handphone');
+            $alamat = $this->input->post('alamat');
+            $tanggal = $this->input->post('tanggal');
+            $komen = $this->input->post('komen');
+            $id_layanan = $this->input->post('id_layanan');
+
+            // Create an array of data to update
+            $data = array(
+                'nama' => $nama,
+                'no_handphone' => $no_handphone,
+                'alamat' => $alamat,
+                'tanggal' => $tanggal,
+                'komen' => $komen,
+                // Assuming menu_id is the column in the database for service/menu ID
+                'id_layanan' => $id_layanan
+            );
+
+            // Call the model method to update the record
+            $this->ModelOrder->updateOrder($id, $data);
+
+            // Redirect or do something else after update
+            redirect('order');
+        } else {
+            // If form is not submitted, load the view with the form
+            $data['order_masuk'] = $this->ModelOrder->getOrderById($id);
+            $this->load->view('your_view', $data);
+        }
+    }
+
+    public function deleteorder($id)
+    {
+        $this->ModelOrder->deleteorder($id);
+        $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"> Berhasil menghapus order </div>');
         redirect('order');
     }
 }

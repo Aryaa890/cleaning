@@ -31,7 +31,7 @@
 <section class="gap">
     <div class="container">
         <div class="heading">
-            <h2>Ahlinya Cleaning Services Untuk Rumah, Apartemen dan Kantor</h2>
+            <h2>Ahlinya Bersih-Bersih Untuk Rumah, Apartemen dan Kantor</h2>
         </div>
         <div class="row align-items-center">
             <div class="col-lg-6">

@@ -22,4 +22,20 @@ class ModelOrder extends CI_Model
             $this->db->delete('order_masuk');
         }
     }
+
+    public function getOrderById($id)
+    {
+        return $this->db->get_where('order_masuk', ['id' => $id])->row_array();
+    }
+
+    public function updateOrder($id, $data)
+    {
+        $this->db->where('id', $id);
+        $this->db->update('order_masuk', $data);
+    }
+
+    public function deleteorder($id)
+    {
+        return $this->db->delete('order_masuk', ['id' => $id]);
+    }
 }
