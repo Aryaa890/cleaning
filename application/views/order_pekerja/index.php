@@ -38,7 +38,7 @@
                             <th scope="col">Alamat</th>
                             <th scope="col">Tanggal Order</th>
                             <th scope="col">Komen</th>
-                            <th scope="col">Id Layanan</th>
+                            <th scope="col">Harga Layanan</th>
                             <th scope="col">Action</th>
                         </tr>
                     </thead>
@@ -52,7 +52,7 @@
                                 <td><?= $op['alamat']; ?></td>
                                 <td><?= $op['tanggal']; ?></td>
                                 <td><?= $op['komen']; ?></td>
-                                <td><?= $op['id_layanan']; ?></td>
+                                <td>Rp <?= number_format($op['id_layanan']);  ?></td>
                                 <td colspan="2">
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                                         Launch demo modal

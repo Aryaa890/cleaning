@@ -21,6 +21,9 @@
             </div>
 
             <div class="col-lg-4 col-md-6">
+
+            </div>
+            <div class="col-lg-4 col-md-6">
                 <div class="widget-title">
                     <h3>Contact Info</h3>
                     <div class="boder"></div>
@@ -77,56 +80,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="widget-title">
-                    <h3>Our Services</h3>
-                    <div class="boder"></div>
-                    <ul>
-                        <li><i class="fa-solid fa-angle-right"></i><a href="javascript:void(0)">Maid Services</a></li>
-                        <li><i class="fa-solid fa-angle-right"></i><a href="javascript:void(0)">About Company</a></li>
-                        <li><i class="fa-solid fa-angle-right"></i><a href="javascript:void(0)">Window Cleaning</a></li>
-                        <li><i class="fa-solid fa-angle-right"></i><a href="javascript:void(0)">Advice & Tips</a></li>
-                        <li><i class="fa-solid fa-angle-right"></i><a href="javascript:void(0)">Office Cleaning</a></li>
-                        <li><i class="fa-solid fa-angle-right"></i><a href="javascript:void(0)">Our Team</a></li>
-                        <li><i class="fa-solid fa-angle-right"></i><a href="javascript:void(0)">Domestic Cleaning</a></li>
-                        <li><i class="fa-solid fa-angle-right"></i><a href="javascript:void(0)">Our Partners</a></li>
-                        <li><i class="fa-solid fa-angle-right"></i><a href="javascript:void(0)">Drycleaning services</a></li>
-                    </ul>
-                </div>
-            </div>
         </div>
         <ul class="image-gallery">
-            <li>
-                <a href="<?= base_url('assets/'); ?>img/gallery-1.jpg" data-fancybox="gallery">
-                    <figure><img alt="girl" src="<?= base_url('assets/'); ?>img/gallery-1.jpg"></figure>
-                </a>
-            </li>
-            <li>
-                <a href="<?= base_url('assets/'); ?>img/gallery-2.jpg" data-fancybox="gallery">
-                    <figure><img alt="girl" src="<?= base_url('assets/'); ?>img/gallery-2.jpg"></figure>
-                </a>
-            </li>
-            <li>
-                <a href="<?= base_url('assets/'); ?>img/gallery-3.jpg" data-fancybox="gallery">
-                    <figure><img alt="girl" src="<?= base_url('assets/'); ?>img/gallery-3.jpg"></figure>
-                </a>
-            </li>
-            <li>
-                <a href="<?= base_url('assets/'); ?>img/gallery-4.jpg" data-fancybox="gallery">
-                    <figure><img alt="girl" src="<?= base_url('assets/'); ?>img/gallery-4.jpg"></figure>
-                </a>
-            </li>
-            <li>
-                <a href="<?= base_url('assets/'); ?>img/gallery-5.jpg" data-fancybox="gallery">
-                    <figure><img alt="girl" src="<?= base_url('assets/'); ?>img/gallery-5.jpg"></figure>
-                </a>
-            </li>
-            <li>
-                <a href="<?= base_url('assets/'); ?>img/gallery-6.jpg" data-fancybox="gallery">
-                    <figure><img alt="girl" src="<?= base_url('assets/'); ?>img/gallery-6.jpg"></figure>
-                </a>
-            </li>
-        </ul>
+
     </div>
 
 </footer>
@@ -156,7 +112,7 @@
                         <form>
                             <select class="form-control" id="id_layanan" name="id_layanan">
                                 <?php foreach ($layanans as $layanan) : ?>
-                                    <option value="<?= $layanan['id']; ?>">
+                                    <option value="<?= $layanan['harga']; ?>">
                                         <?= $layanan['nama']; ?> <!-- Change 'layanan' to 'nama' -->
                                     </option>
                                 <?php endforeach; ?>

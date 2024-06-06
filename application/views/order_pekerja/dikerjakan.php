@@ -25,7 +25,7 @@
                         <th scope="col">Tanggal Order</th>
                         <th scope="col">Komen</th>
                         <th scope="col">Nama Pekerja</th>
-                        <th scope="col">Id layanan</th>
+                        <th scope="col">Harga layanan</th>
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
@@ -40,7 +40,7 @@
                             <td><?= $od['tanggal']; ?></td>
                             <td><?= $od['komen']; ?></td>
                             <td><?= $od['nama_pekerja']; ?></td>
-                            <td><?= $od['id_layanan']; ?></td>
+                            <td>Rp <?= number_format($od['id_layanan']);  ?></td>
                             <td colspan="2">
                                 <a href="<?= base_url('order_pekerja/laporan/' . $od['id']); ?>" class="badge badge-pill badge-success" onclick="return confirm('Yakin?');" style="font-size:1rem;">✓</a>
                             </td>

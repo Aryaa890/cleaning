@@ -33,7 +33,7 @@
                             <td><?= $l['nama']; ?></td>
                             <td><?= $l['tanggal']; ?></td>
                             <td><?= $l['nama_pekerja']; ?></td>
-                            <td><?= $l['id_layanan']; ?></td>
+                            <td>Rp <?= number_format($l['id_layanan']);  ?></td>
                         </tr>
                         <?php $i++; ?>
                     <?php endforeach; ?>

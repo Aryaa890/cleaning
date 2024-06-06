@@ -24,7 +24,7 @@
                         <th scope="col">Alamat</th>
                         <th scope="col">Tanggal Order</th>
                         <th scope="col">Komen</th>
-                        <th scope="col">Id Layanan</th>
+                        <th scope="col">Harga Layanan</th>
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
@@ -38,7 +38,7 @@
                             <td><?= $om['alamat']; ?></td>
                             <td><?= $om['tanggal']; ?></td>
                             <td><?= $om['komen']; ?></td>
-                            <td><?= $om['id_layanan']; ?></td>
+                            <td>Rp <?= number_format($om['id_layanan']);  ?></td>
                             <td colspan="2">
                                 <a href="<?= base_url('order/lanjutorder/' . $om['id']); ?>" class="badge badge-pill badge-success" onclick="return confirm('Yakin?');" style="font-size:1rem;">✓</a>
                                 <a href="<?= base_url(); ?>order/hapusOrder/ <?= $om['id']; ?>" class="badge badge-pill badge-danger" onclick="return confirm('Yakin?');" style="font-size:1rem;">X</a>

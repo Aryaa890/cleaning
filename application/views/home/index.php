@@ -5,8 +5,9 @@
                 <div class="row align-items-center">
                     <div class="offset-lg-1 col-lg-6">
                         <div class="hero-text">
-                            <h1>Dry Cleaning & Experts Service</h1>
-                            <h4>Dry cleaning and laundry service, made to make life fresher</h4>
+                            <h1>Ahlinya </h1>
+                            <h1>Cleaning Service</h1>
+                            <h4>Bersih dan Segar, Hidup Jadi Lebih Mudah - Solusi Terbaik untuk Kebersihan Anda</h4>
                             <div class="d-md-flex">
                                 <a href="#" class="sec-btn">Order Now</a>
                                 <div>
@@ -30,24 +31,19 @@
 <section class="gap">
     <div class="container">
         <div class="heading">
-            <img src="<?= base_url('assets/'); ?>img/heading-img.png" alt="heading-img">
-            <p>Welcome to the Dry Cleaning Company</p>
-            <h2>Professional Cleaning Services for Home and Office</h2>
+            <h2>Ahlinya Cleaning Services Untuk Rumah, Apartemen dan Kantor</h2>
         </div>
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <div class="professional-img">
                     <img alt="img" src="<?= base_url('assets/'); ?>img/professional.jpg">
-                    <div class="professional-phon">
-                        <img alt="img" src="<?= base_url('assets/'); ?>img/phon-icon.png">
-                        <span>Emergency? Call Us Now :</span>
-                        <a href="callto:+1234567890">+123 4567 890</a>
-                    </div>
+
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="professional">
-                    <p>Our home cleaning services are designed to give you the peace of mind you deserve and the time you need to enjoy your life and love give you the peace of mind you deserve and the time you need to enjoy your life and love home cleaning services.</p>
+                    <p>
+                        Layanan kebersihan kami dirancang untuk memberikan Anda ketenangan pikiran yang Anda butuhkan dan waktu untuk menikmati hidup Anda. Baik itu rumah atau kantor Anda, tim profesional kami memastikan lingkungan yang bersih sehingga Anda dapat fokus pada hal-hal yang benar-benar penting</p>
                     <ul class="list-style">
                         <li>
                             <div class="bol"></div>One-off, weekly or fortnightly visits
@@ -63,16 +59,10 @@
                         </li>
                     </ul>
                     <div class="d-sm-flex align-items-center">
-                        <div class="d-flex align-items-center">
-                            <h4>14<sup>+</sup></h4>
-                            <h6>years of experience</h6>
-                        </div>
+
                         <div class="d-flex align-items-center company-director">
-                            <img src="<?= base_url('assets/'); ?>img/man.jpg" alt="img">
-                            <div>
-                                <span>Company Director</span>
-                                <h6>Thomas Walkar</h6>
-                            </div>
+
+
                         </div>
                     </div>
                 </div>
