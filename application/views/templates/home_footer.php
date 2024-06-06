@@ -128,35 +128,7 @@
             </li>
         </ul>
     </div>
-    <div class="footer-bootom-bar position-relative">
-        <div class="container">
-            <div class="d-lg-flex align-items-center justify-content-between">
-                <div class="d-flex align-items-center">
-                    <i class="fa-solid fa-paper-plane"></i>
-                    <h3>Subscribe Newsletter</h3>
-                </div>
-                <form>
-                    <input type="text" name="email" placeholder="Enter your email address...">
-                    <button class="sec-btn"><span>Subscribe</span></button>
-                </form>
-            </div>
-            <div class="copyright">
-                <p><b>Cleanio</b> - Copyright 2023. Design by <b>Wellconcept.</b></p>
-                <ul class="social-media">
-                    <li>
-                        <a href="javascript:void(0)">
-                            <i class="fab fa-facebook-f icon"></i>facebook</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)"><i class="fab fa-twitter icon"></i>twitter</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)"><i class="fa-brands fa-linkedin-in"></i>linkedin</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+
 </footer>
 <!-- popup -->
 <div class="box">

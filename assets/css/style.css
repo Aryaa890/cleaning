@@ -765,8 +765,8 @@ ul.list-style .bol {
 }
 /* 10. works-section */
 .works-section {
-    margin-top: -180px;
-    padding-top: 300px;
+    margin-top: 0px;
+    padding-top: 100px;
     position: relative;
     padding-bottom: 120px;
     background-position: bottom;

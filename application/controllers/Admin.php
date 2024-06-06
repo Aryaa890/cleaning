@@ -7,6 +7,7 @@ class Admin extends CI_Controller
     {
         parent::__construct();
         is_logged_in();
+        $this->load->model('ModelUser');
     }
 
     public function index()
@@ -20,6 +21,7 @@ class Admin extends CI_Controller
         $this->load->view('admin/index', $data);
         $this->load->view('templates/footer');
     }
+
     public function data_user()
     {
         $data['title'] = 'Data User';
@@ -28,56 +30,53 @@ class Admin extends CI_Controller
         $data['data_user'] = $this->db->get('user')->result_array();
         $data['role'] = $this->db->get('user_role')->result_array();
 
-
         $this->form_validation->set_rules('nama', 'Nama', 'required');
         $this->form_validation->set_rules('email', 'Email', 'required|valid_email');
         $this->form_validation->set_rules('password', 'Password', 'required');
 
         if ($this->form_validation->run() == false) {
-
             $this->load->view('templates/header', $data);
             $this->load->view('templates/sidebar', $data);
             $this->load->view('templates/topbar', $data);
             $this->load->view('admin/data_user', $data);
+            $this->load->view('admin/modal_user', $data);
             $this->load->view('templates/footer');
         } else {
-            $data = [
-                'nama' => $this->input->post('nama'),
-                'email' => $this->input->post('email'),
-                'password' => $this->input->post('password'),
-                'image' => $this->input->post('image'),
-                'role_id' => $this->input->post('role_id'),
-                'is_active' => $this->input->post('is_active')
-            ];
+            $config['upload_path']          = './assets/images/userProfile/';
+            $config['allowed_types']        = 'gif|jpg|png';
+            $config['max_size']             = 10240;
+            $config['max_width']            = 10240;
+            $config['max_height']           = 10240;
 
-            $upload_image = $_FILES['image']['name'];
+            $this->load->library('upload', $config);
+            $this->upload->initialize($config);
 
-            if ($upload_image) {
-                $config['upload_path'] = './assets/img/profile/';
-                $config['allowed_types'] = 'gif|jpg|png';
-                $config['max_size'] = '300000';
-                $config['max_width'] = '1024';
-                $config['max_height'] = '1000';
-                $config['file_name'] = 'pro' . time();
+            if (!$this->upload->do_upload('image')) {
+                echo $this->upload->display_errors();
+            } else {
+                $image = $this->upload->data();
+                $image = $image['file_name'];
 
-                $this->load->library('upload', $config);
+                $dataUser = [
+                    'nama' => $this->input->post('nama'),
+                    'email' => $this->input->post('email'),
+                    'image' => $image,
+                    'password' => $this->input->post('password'),
+                    'role_id' => 1,
+                    'is_active' => 1
+                ];
 
-                if ($this->upload->do_upload('image')) {
-                    $gambar_lama = $data['user']['image'];
-                    if ($gambar_lama != 'default.jpg') {
-                        unlink(FCPATH . 'assets/img/profile/' . $gambar_lama);
-                    }
-
-                    $gambar_baru = $this->upload->data('file_name');
-
-                    $this->db->set('image', $gambar_baru);
-                } else {
-                }
+                $this->ModelUser->tambahUser($dataUser);
+                $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"> Berhasil menambahkan user </div>');
+                redirect('admin/data_user');
             }
-
-            $this->db->insert('user', $data);
-            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">User berhasil ditambahkan</div>');
-            redirect('admin/data_user');
         }
+    }
+
+    public function deleteUser($id)
+    {
+        $this->ModelUser->deleteUser($id);
+        $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"> Berhasil menghapus user </div>');
+        redirect('admin/data_user');
     }
 }
