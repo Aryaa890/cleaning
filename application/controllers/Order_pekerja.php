@@ -43,7 +43,7 @@ class Order_pekerja extends CI_Controller
     {
         $this->load->model('ModelLaporan', TRUE);
         $this->ModelLaporan->laporan($id);
-        redirect('laporan');
+        redirect('order_pekerja/dikerjakan');
     }
 
 

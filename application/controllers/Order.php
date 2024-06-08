@@ -15,10 +15,11 @@ class Order extends CI_Controller
     {
         $data['title'] = 'Orderan Masuk';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-        $data['order_masuk'] = $this->db->get('order_masuk')->result_array();
+        $data['order_masuk'] = $this->ModelOrder->getAllOrders();
         $data['layanan'] = $this->db->get('layanan')->result_array();
 
-
+        // Flash message
+        $data['flash_message'] = $this->session->flashdata('message');
 
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
@@ -27,35 +28,12 @@ class Order extends CI_Controller
         $this->load->view('templates/footer');
     }
 
-    public function orderAktif()
+    public function ubahOrder()
     {
-        $data['title'] = 'Orderan Aktif';
-        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-    }
-
-    public function hapusOrder($id)
-    {
-        $this->load->model('ModelOrder');
-        $hapus = $this->ModelOrder->hapus($id);
-
-        $this->session->set_flashdata('flash', 'dihapus');
-        redirect('order');
-    }
-
-    public function lanjutorder($id)
-    {
-        $this->load->model('ModelOrder', TRUE);
-        $this->ModelOrder->lanjut($id);
-        redirect('order');
-    }
-
-    public function ubahORder($id)
-    {
-
-
         // Check if form is submitted
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Get form data
+            $id = $this->input->post('id');
             $nama = $this->input->post('nama');
             $no_handphone = $this->input->post('no_handphone');
             $alamat = $this->input->post('alamat');
@@ -70,7 +48,6 @@ class Order extends CI_Controller
                 'alamat' => $alamat,
                 'tanggal' => $tanggal,
                 'komen' => $komen,
-                // Assuming menu_id is the column in the database for service/menu ID
                 'id_layanan' => $id_layanan
             );
 
@@ -79,17 +56,20 @@ class Order extends CI_Controller
 
             // Redirect or do something else after update
             redirect('order');
-        } else {
-            // If form is not submitted, load the view with the form
-            $data['order_masuk'] = $this->ModelOrder->getOrderById($id);
-            $this->load->view('your_view', $data);
         }
     }
 
-    public function deleteorder($id)
+    public function hapusOrder($id)
     {
-        $this->ModelOrder->deleteorder($id);
+        $this->ModelOrder->deleteOrder($id);
         $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"> Berhasil menghapus order </div>');
+        redirect('order');
+    }
+
+    public function lanjutorder($id)
+    {
+        $this->load->model('ModelOrder', TRUE);
+        $this->ModelOrder->lanjut($id);
         redirect('order');
     }
 }

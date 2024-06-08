@@ -131,6 +131,17 @@
     <div class="close"><i class="fa-solid fa-xmark"></i></div>
 </div>
 <!-- popup end -->
+
+<!-- Success pop-up structure -->
+<div class="success-popup" id="successPopup">
+    <div class="popup-header">Success!</div>
+    <div class="popup-body">Your operation was successful.</div>
+    <div class="popup-footer">
+        <button class="close-btn" onclick="closePopup()">Close</button>
+    </div>
+</div>
+
+<!-- popup end -->
 <!-- progress -->
 <div id="progress">
     <span id="progress-value"><i class="fa-solid fa-arrow-up"></i></span>
@@ -149,4 +160,5 @@
 <script src="<?= base_url('assets/'); ?>js/jquery.fancybox.min.js"></script>
 <script src="<?= base_url('assets/'); ?>js/aos-data.js"></script>
 <script src="<?= base_url('assets/'); ?>js/custom.js"></script>
+<script src="<?= base_url('assets/js/scripts.js'); ?>"></script>
 </body>

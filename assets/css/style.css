@@ -4455,6 +4455,20 @@ p.num a {
     border-radius: 30px;
     border-bottom-left-radius: 100px;
 }
+/* Success pop-up styling */
+.success-popup {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
 
 /* transition speed */
 .navbar-links li a,.pagination li,.provide-img img,.mobile-nav a#res-cross:before,

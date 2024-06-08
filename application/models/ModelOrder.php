@@ -23,9 +23,10 @@ class ModelOrder extends CI_Model
         }
     }
 
-    public function getOrderById($id)
+    public function getAllOrders()
     {
-        return $this->db->get_where('order_masuk', ['id' => $id])->row_array();
+        $query = $this->db->get('order_masuk');
+        return $query->result(); // Returns an array of objects
     }
 
     public function updateOrder($id, $data)
@@ -34,8 +35,9 @@ class ModelOrder extends CI_Model
         $this->db->update('order_masuk', $data);
     }
 
-    public function deleteorder($id)
+    public function deleteOrder($id)
     {
-        return $this->db->delete('order_masuk', ['id' => $id]);
+        $this->db->where('id', $id);
+        $this->db->delete('order_masuk');
     }
 }
