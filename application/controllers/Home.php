@@ -34,6 +34,10 @@ class Home extends CI_Controller
 
         $this->db->insert('order_masuk', $data);
         $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">User berhasil ditambahkan</div>');
-        redirect('home');
+
+        // Set the content type to application/json
+        header('Content-Type: application/json');
+        // Return a JSON response
+        echo json_encode(['status' => 'success', 'message' => 'Order successfully added']);
     }
 }

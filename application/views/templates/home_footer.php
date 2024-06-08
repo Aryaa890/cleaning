@@ -94,7 +94,7 @@
                 <h2>Schedule a Pickup</h2>
                 <div class="boder-bar"></div>
             </div>
-            <form action="<?= base_url('Home/order'); ?>" method="post">
+            <form id="pickup-form" method="post">
                 <div class="row">
                     <div class="col-lg-6">
                         <input placeholder="Pick-Up Date" type="text" onfocus="(this.type = 'date')" id="tanggal" name="tanggal">
@@ -109,56 +109,47 @@
                         <input type="text" name="alamat" id="alamat" placeholder="Address">
                     </div>
                     <div class="col-lg-8">
-                        <form>
-                            <select class="form-control" id="id_layanan" name="id_layanan">
-                                <?php foreach ($layanans as $layanan) : ?>
-                                    <option value="<?= $layanan['harga']; ?>">
-                                        <?= $layanan['nama']; ?> <!-- Change 'layanan' to 'nama' -->
-                                    </option>
-                                <?php endforeach; ?>
-                            </select>
-                        </form>
+                        <select class="form-control" id="id_layanan" name="id_layanan">
+                            <?php foreach ($layanans as $layanan) : ?>
+                                <option value="<?= $layanan['harga']; ?>">
+                                    <?= $layanan['nama']; ?>
+                                </option>
+                            <?php endforeach; ?>
+                        </select>
                     </div>
                     <div class="col-lg-12">
                         <textarea placeholder="Comment" name="komen" id="komen"></textarea>
                     </div>
-                    <button type="submit" class="sec-btn">Book Order</button>
+                    <button type="button" id="submit-btn" class="sec-btn">Book Order</button>
                 </div>
             </form>
-        </div>
-        <img src="<?= base_url('assets/'); ?>img/box.jpg" alt="box">
-    </div>
-    <div class="close"><i class="fa-solid fa-xmark"></i></div>
-</div>
-<!-- popup end -->
 
-<!-- Success pop-up structure -->
-<div class="success-popup" id="successPopup">
-    <div class="popup-header">Success!</div>
-    <div class="popup-body">Your operation was successful.</div>
-    <div class="popup-footer">
-        <button class="close-btn" onclick="closePopup()">Close</button>
-    </div>
-</div>
+            <!-- Popup for displaying success message -->
+            <div id="success-popup" class="popup">
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <p>Order Successful!</p>
+                </div>
+            </div>
 
-<!-- popup end -->
-<!-- progress -->
-<div id="progress">
-    <span id="progress-value"><i class="fa-solid fa-arrow-up"></i></span>
-</div>
-<!-- progress end -->
-<!-- jQuery -->
-<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-<script src="<?= base_url('assets/'); ?>js/jquery-3.6.0.min.js"></script>
-<!-- Bootstrap Js -->
-<script src="<?= base_url('assets/'); ?>js/bootstrap.min.js"></script>
-<script src="<?= base_url('assets/'); ?>js/owl.carousel.min.js"></script>
-<script src="<?= base_url('assets/'); ?>js/slick.min.js"></script>
-<script src="<?= base_url('assets/'); ?>js/aos.js"></script>
-<script src="<?= base_url('assets/'); ?>js/jquery.nice-select.min.js"></script>
-<!-- fancybox -->
-<script src="<?= base_url('assets/'); ?>js/jquery.fancybox.min.js"></script>
-<script src="<?= base_url('assets/'); ?>js/aos-data.js"></script>
-<script src="<?= base_url('assets/'); ?>js/custom.js"></script>
-<script src="<?= base_url('assets/js/scripts.js'); ?>"></script>
-</body>
+            <!-- popup end -->
+            <!-- progress -->
+            <div id="progress">
+                <span id="progress-value"><i class="fa-solid fa-arrow-up"></i></span>
+            </div>
+            <!-- progress end -->
+            <!-- jQuery -->
+            <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+            <script src="<?= base_url('assets/'); ?>js/jquery-3.6.0.min.js"></script>
+            <!-- Bootstrap Js -->
+            <script src="<?= base_url('assets/'); ?>js/bootstrap.min.js"></script>
+            <script src="<?= base_url('assets/'); ?>js/owl.carousel.min.js"></script>
+            <script src="<?= base_url('assets/'); ?>js/slick.min.js"></script>
+            <script src="<?= base_url('assets/'); ?>js/aos.js"></script>
+            <script src="<?= base_url('assets/'); ?>js/jquery.nice-select.min.js"></script>
+            <!-- fancybox -->
+            <script src="<?= base_url('assets/'); ?>js/jquery.fancybox.min.js"></script>
+            <script src="<?= base_url('assets/'); ?>js/aos-data.js"></script>
+            <script src="<?= base_url('assets/'); ?>js/custom.js"></script>
+            <script src="<?= base_url('assets/'); ?>js/scripts.js"></script>
+            </body>

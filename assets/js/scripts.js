@@ -1,27 +1,39 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const formBox = document.getElementById('formBox');
-    const successPopup = document.getElementById('successPopup');
-    const closeSuccessPopupButton = document.getElementById('closeSuccessPopup');
-    const pickupForm = document.getElementById('pickupForm');
+    document.getElementById('submit-btn').addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent the default form submission behavior
 
-    pickupForm.addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevent default form submission
+        var form = document.getElementById('pickup-form');
+        var formData = new FormData(form);
 
-        // Add your form submission logic here (e.g., AJAX request)
-        // Assuming the submission is successful, do the following:
-
-        // Close the form box
-        formBox.style.display = 'none';
-
-        // Show the success popup
-        successPopup.style.display = 'block';
-
-        // Reset the form fields
-        pickupForm.reset();
+        fetch(baseUrl + 'Home/order', {
+            method: 'POST',
+            body: formData
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json(); // Parse the JSON response
+            })
+            .then(data => {
+                if (data.status === 'success') {
+                    // Show success popup
+                    document.getElementById('success-popup').style.display = 'block';
+                    // Optionally clear the form fields
+                    form.reset();
+                    // Optionally hide the form
+                    // form.style.display = 'none';
+                } else {
+                    throw new Error(data.message || 'Something went wrong');
+                }
+            })
+            .catch(error => {
+                console.error('There was a problem with the fetch operation:', error);
+            });
     });
 
-    closeSuccessPopupButton.addEventListener('click', function () {
-        // Hide the success popup
-        successPopup.style.display = 'none';
+    // Close popup when close button is clicked
+    document.querySelector('.popup .close').addEventListener('click', function () {
+        document.getElementById('success-popup').style.display = 'none';
     });
 });
