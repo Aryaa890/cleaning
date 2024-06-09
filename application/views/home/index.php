@@ -29,7 +29,7 @@
     <div class="heroshaps-2"></div>
 </section>
 <section class="gap">
-    <div class="container">
+    <div class="container" id="about-section">
         <div class="heading">
             <h2>Ahlinya Bersih-Bersih Untuk Rumah, Apartemen dan Kantor</h2>
         </div>
@@ -46,16 +46,16 @@
                         Layanan kebersihan kami dirancang untuk memberikan Anda ketenangan pikiran yang Anda butuhkan dan waktu untuk menikmati hidup Anda. Baik itu rumah atau kantor Anda, tim profesional kami memastikan lingkungan yang bersih sehingga Anda dapat fokus pada hal-hal yang benar-benar penting</p>
                     <ul class="list-style">
                         <li>
-                            <div class="bol"></div>One-off, weekly or fortnightly visits
+                            <div class="bol"></div>Jadwal Fleksibel: Kunjungan sekali, mingguan, dua mingguan, atau bulanan sesuai kebutuhan Anda.
                         </li>
                         <li>
-                            <div class="bol"></div>Vetted & background-checked cleaners
+                            <div class="bol"></div>Pembersih Terverifikasi: Profesional yang telah diperiksa latar belakangnya untuk ketenangan pikiran Anda.
                         </li>
                         <li>
-                            <div class="bol"></div>Keep the same cleaner for every visit
+                            <div class="bol"></div>Produk Ramah Lingkungan: Penggunaan produk pembersih yang aman bagi lingkungan.
                         </li>
                         <li>
-                            <div class="bol"></div>Book, manage & pay online
+                            <div class="bol"></div>Jaminan Kepuasan: Komitmen terhadap layanan berkualitas tinggi dengan jaminan kepuasan.
                         </li>
                     </ul>
                     <div class="d-sm-flex align-items-center">
@@ -73,11 +73,11 @@
 
 
 <section class="works-section" style="background-image: url(<?= base_url('assets/'); ?>img/works-section.jpg);">
-    <div class="container">
+    <div class="container" id="service-section">
         <div class="heading">
             <img src="<?= base_url('assets/'); ?>img/heading-img.png" alt="heading-img">
-            <p>Follow A Few Easy Steps</p>
-            <h2>How it Works</h2>
+            <p>Ikuti Langkah Langkah Mudah Berikut</p>
+            <h2>Cara Kerja</h2>
         </div>
         <div class="row">
             <div class="col-lg-3 col-sm-6">
@@ -86,8 +86,7 @@
                         <i><img alt="img" src="<?= base_url('assets/'); ?>img/works-icon-1.png"></i>
                         <span>1</span>
                     </div>
-                    <h3>Book A Pickup</h3>
-                    <p>Choose when and where you wish us to collect & deliver your laundry.</p>
+                    <h3>Lakukan Pemesan</h3>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
@@ -96,8 +95,7 @@
                         <i><img alt="img" src="<?= base_url('assets/'); ?>img/works-icon-2.png"></i>
                         <span>2</span>
                     </div>
-                    <h3>We Collect</h3>
-                    <p>Our team collects your clothes from your doorstep. </p>
+                    <h3>Kami Datang</h3>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
@@ -106,8 +104,7 @@
                         <i><img alt="img" src="<?= base_url('assets/'); ?>img/works-icon-3.png"></i>
                         <span>3</span>
                     </div>
-                    <h3>Expert Processing</h3>
-                    <p>Choose when and where you wish us to collect & deliver your laundry.</p>
+                    <h3>Kami Membersihkan Rumah Anda</h3>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
@@ -116,8 +113,7 @@
                         <i><img alt="img" src="<?= base_url('assets/'); ?>img/works-icon-4.png"></i>
                         <span>4</span>
                     </div>
-                    <h3>We Deliver</h3>
-                    <p>We bring back your freshly cleaned and rejuvenated clothes</p>
+                    <h3>Rumah Anda Bersih Mengkilat</h3>
                 </div>
             </div>
             <div class="btn-center">
@@ -130,7 +126,7 @@
 </section>
 
 <section class="price-package gap" style="background-image:url(<?= base_url('assets/'); ?>img/price-package.png)">
-    <div class="container">
+    <div class="container" id="harga-section">
         <div class="heading">
             <img src="<?= base_url('assets/'); ?>img/heading-img.png" alt="heading-img">
             <p>What we offer</p>
@@ -224,7 +220,7 @@
 </section>
 
 <section>
-    <div class="container">
+    <div class="container" id="testimoni-section">
         <div class="heading">
             <p>Client’s Review</p>
             <h2 class="pb-0">What Our Client’s Say?</h2>

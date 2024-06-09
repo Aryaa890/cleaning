@@ -105,18 +105,18 @@
                                 </ul>
                             </li>
                             <li class="navbar-dropdown">
-                                <a href="about.html">About</a>
+                                <a href="#about-section">About</a>
                             </li>
+
                             <li class="navbar-dropdown has-children">
-                                <a href="#">Services</a>
-                                <ul class="dropdown">
-                                    <li><a href="services.html">Services</a></li>
-                                    <li><a href="services-details.html">Services details</a></li>
-                                </ul>
+                                <a href="#service-section">Services</a>
                             </li>
 
                             <li class="navbar-dropdown">
-                                <a href="contact.html">contact</a>
+                                <a href="#harga-section">Harga</a>
+                            </li>
+                            <li class="navbar-dropdown">
+                                <a href="#testimoni-section">Testimoni</a>
                             </li>
                         </ul>
                     </nav>
@@ -149,7 +149,10 @@
                             <li><a href="index-2.html">home 2</a></li>
                         </ul>
                     </li>
-                    <li><a href="about.html">about</a></li>
+                    <li class="navbar-dropdown">
+                        <a href="#about-section">About</a>
+                    </li>
+
 
 
                     <li class="menu-item-has-children"><a href="JavaScript:void(0)">Services</a>

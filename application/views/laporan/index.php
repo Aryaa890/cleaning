@@ -14,6 +14,8 @@
     <div class="row">
         <div class="col-lg">
 
+            <a href="<?= base_url('laporan/generatepdf'); ?>" class="btn btn-primary">Generate PDF</a>
+
 
             <table class="table table-hover">
                 <thead>
@@ -22,7 +24,7 @@
                         <th scope="col">Nama Pemesan</th>
                         <th scope="col">Tanggal Order</th>
                         <th scope="col">Nama Pekerja</th>
-                        <th scope="col">Id layanan</th>
+                        <th scope="col">Harga layanan</th>
                     </tr>
                 </thead>
                 <tbody>

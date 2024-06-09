@@ -16,4 +16,25 @@ class ModelLaporan extends CI_Model
             $this->db->delete('order_diambil');
         }
     }
+
+    public function __construct()
+    {
+        parent::__construct();
+    }
+
+    // Method to fetch all data from the "laporan" table
+    public function get_all_laporan()
+    {
+        // Fetch all rows from the "laporan" table
+        $query = $this->db->get('laporan');
+
+        // Check if there are any rows returned
+        if ($query->num_rows() > 0) {
+            // Return the result set as an array of rows
+            return $query->result_array();
+        } else {
+            // If no rows found, return an empty array
+            return array();
+        }
+    }
 }
