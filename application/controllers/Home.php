@@ -8,10 +8,10 @@ class Home extends CI_Controller
         parent::__construct();
         $this->load->model('ModelHome');
     }
-
     public function index()
     {
         // Fetch data from the 'layanan' table
+        $this->load->model('ModelHome');
         // Fetch data from the 'layanan' table
         $data['layanans'] = $this->ModelHome->get_all_layanan();
 

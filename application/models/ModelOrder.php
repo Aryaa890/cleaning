@@ -40,4 +40,23 @@ class ModelOrder extends CI_Model
         $this->db->where('id', $id);
         $this->db->delete('order_masuk');
     }
+    public function get_count()
+    {
+        return $this->db->count_all('order_masuk');
+    }
+
+    public function get_pending_count()
+    {
+        return $this->db->count_all('order_pending');
+    }
+
+    public function get_diambil_count()
+    {
+        return $this->db->count_all('order_diambil');
+    }
+
+    public function get_laporan_count()
+    {
+        return $this->db->count_all('laporan');
+    }
 }
