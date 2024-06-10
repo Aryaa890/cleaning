@@ -86,4 +86,42 @@ class Admin extends CI_Controller
         $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"> Berhasil menghapus user </div>');
         redirect('admin/data_user');
     }
+    public function ubahUser()
+    {
+        // Check if form is submitted
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            // Get form data
+            $id = $this->input->post('id'); // Assuming you have an 'id' field in your form
+            $nama = $this->input->post('nama');
+            $email = $this->input->post('email');
+            $password = $this->input->post('password');
+            $role_id = $this->input->post('role_id');
+
+            // Check if a new image file has been uploaded
+            if (!empty($_FILES['image']['name'])) {
+                $image = $_FILES['image']['name']; // New image file has been uploaded
+            } else {
+                // No new image file uploaded, keep the existing image path
+                $user = $this->ModelUser->get_user_by_id($id); // Get user data from database
+                $image = $user['image']; // Retrieve existing image path from database
+            }
+
+            // Create an array of data to update
+            $data = array(
+                'nama' => $nama,
+                'email' => $email,
+                'password' => $password,
+                'role_id' => $role_id,
+                'image' => $image // Update image path
+            );
+
+            // Call the model method to update the record
+            $this->ModelUser->update_user($id, $data);
+
+            // Redirect or do something else after update
+            redirect('admin/data_user'); // Redirect to the appropriate page after update
+        } else {
+            // If not a POST request, handle it accordingly
+        }
+    }
 }
