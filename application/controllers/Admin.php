@@ -17,9 +17,9 @@ class Admin extends CI_Controller
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
         $data['data_user'] = $this->db->get('user')->result_array();
         $data['order_masuk'] = $this->db->get('order_masuk')->result_array();
-        $data['count'] = $this->ModelOrder->get_count();
-        $data['count'] = $this->ModelOrder->get_pending_count();
-        $data['count'] = $this->ModelOrder->get_diambil_count();
+        $data['count3'] = $this->ModelOrder->get_count();
+        $data['count2'] = $this->ModelOrder->get_pending_count();
+        $data['count1'] = $this->ModelOrder->get_diambil_count();
         $data['count'] = $this->ModelOrder->get_laporan_count();
 
         $this->load->view('templates/header', $data);

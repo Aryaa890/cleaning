@@ -64,7 +64,7 @@
                                             </g>
                                         </svg>
                                     </i>
-                                    <span>Phone:</span><a class="me-3" href="callto:800-836-4620">800-836-4620</a>
+                                    <span>Phone:</span><a class="me-3" href="callto:800-836-4620">+62 123 123 123</a>
                                 </div>
                                 <div class="phone">
                                     <i>
@@ -73,19 +73,15 @@
                    M51.213,401l135.489-135.489L256,325.896l69.298-60.384L460.787,401H51.213z M482,379.788L347.969,245.756L482,128.967V379.788z"></path>
                                         </svg>
                                     </i>
-                                    <span>Email:</span><a href="mallto:information@domain.com"><span class="__cf_email__" data-cfemail="3e575058514c535f4a5751507e5a51535f5750105d5153">[email&#160;protected]</span></a>
+                                    <span>Email:</span>Cleanify@gmail.com</span></a>
                                 </div>
                             </div>
                         </div>
                         <div>
                             <div class="time">
-                                <div class="login d-flex align-items-center">
-                                    <i class="fa-solid fa-clock"></i>
-                                    <p>Monday to Saturday:<b>8.00 AM - 05.00 PM</b></p>
-                                </div>
                                 <div class="login">
                                     <i class="fa-solid fa-user"></i>
-                                    <a href="#">Login and Register</a>
+                                    <a href="auth">Login Untuk Staff</a>
                                 </div>
                             </div>
                         </div>
@@ -109,7 +105,7 @@
                             </li>
 
                             <li class="navbar-dropdown has-children">
-                                <a href="#service-section">Services</a>
+                                <a href="#service-section">Cara Kerja</a>
                             </li>
 
                             <li class="navbar-dropdown">
@@ -127,7 +123,7 @@
                                 </svg>
                             </a>
                         </div>
-                        <a href="javascript:void(0)" class="lightbox-toggle sec-btn">Schedule a Pickup</a>
+                        <a href="javascript:void(0)" class="lightbox-toggle sec-btn">Order</a>
                     </div>
                     <div class="bar-menu">
                         <i class="fa-solid fa-bars"></i>

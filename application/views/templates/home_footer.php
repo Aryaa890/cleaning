@@ -6,7 +6,7 @@
                     <a href="#">
                         <img alt="img" src="<?= base_url('assets/'); ?>img/logo.png">
                     </a>
-                    <p>Stanard dummy text ever snce the a Ipsumf. the printingand ypese inghas mmyen the supi Stanard dummy text ever snce the a Ipsumf.</p>
+                    <p>Bersih dan Segar, Hidup Jadi Lebih Mudah - Solusi Terbaik untuk Kebersihan Anda</p>
                     <div class="star-rating">
                         <ul>
                             <li><i class="fa-solid fa-star"></i></li>
@@ -39,7 +39,7 @@
                         </i>
                         <div>
                             <span>Phone No:</span>
-                            <h6><a href="callto:+09(0)2076897888">+09 (0) 207 689 7888</a></h6>
+                            <h6><a href="callto:+09(0)2076897888">+62 123 123 123</a></h6>
                         </div>
                     </div>
                     <div class="get-in-touch">
@@ -51,7 +51,7 @@
                         </i>
                         <div>
                             <span>Email Address:</span>
-                            <h6><a href="https://wellconcept.co/cdn-cgi/l/email-protection#bcf8d3d1ddd5d2d2ddd1d9fcdfd3d1ccddd2c592dfd3d1"><span class="__cf_email__" data-cfemail="5713383a363e3939363a321734383a2736392e7934383a">[email&#160;protected]</span></a></h6>
+                            <h6>Cleanify@gmail.com</h6>
                         </div>
                     </div>
                     <div class="get-in-touch">
@@ -75,7 +75,10 @@
                             </svg>
                         </i>
                         <div>
-                            <span class="pt-2 pb-0">5604 Willow Crossing Ct, Clifton, United State</span>
+                            <span class="pt-2 pb-0">Jl. Anggrek No. 10, Kelurahan Rawa Buntu,
+                                Kecamatan Serpong, BSD City,
+                                Tangerang Selatan, Banten 15318,
+                                Indonesia</span>
                         </div>
                     </div>
                 </div>
@@ -91,7 +94,7 @@
     <div class="flex-img">
         <div class="form-box">
             <div class="comment">
-                <h2>Schedule a Pickup</h2>
+                <h2>Order</h2>
                 <div class="boder-bar"></div>
             </div>
             <form id="pickup-form" method="post">
@@ -128,7 +131,7 @@
             <div id="success-popup" class="popup">
                 <div class="popup-content">
                     <span class="close">&times;</span>
-                    <p>Order Successful!</p>
+                    <p>Silahkan Tunggu Konfirmasi Dari Admin!</p>
                 </div>
             </div>
 
