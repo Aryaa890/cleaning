@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cleanio - Home 1</title>
+    <title>Cleanify</title>
     <link rel="icon" href="<?= base_url('assets/'); ?>img/heading-img.png">
     <!-- CSS only -->
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/'); ?>css/bootstrap.min.css">
@@ -90,15 +90,11 @@
             </div>
             <div class="container">
                 <div class="bottom-bar">
-                    <a href="index.html"><img src="<?= base_url('assets/'); ?>img/logo-b.png" alt="logo"></a>
+                    <a href="#"><img src="<?= base_url('assets/'); ?>img/logo-b.png" alt="logo"></a>
                     <nav class="navbar">
                         <ul class="navbar-links">
                             <li class="navbar-dropdown has-children">
-                                <a href="#">home</a>
-                                <ul class="dropdown">
-                                    <li><a href="index.html">home 1</a></li>
-                                    <li><a href="index-2.html">home 2</a></li>
-                                </ul>
+                                <a href="cleaning">home</a>
                             </li>
                             <li class="navbar-dropdown">
                                 <a href="#about-section">About</a>
@@ -139,11 +135,6 @@
                 <ul>
 
                     <li class="menu-item-has-children"><a href="JavaScript:void(0)">Home</a>
-                        <ul class="sub-menu">
-
-                            <li><a href="index.html">home 1</a></li>
-                            <li><a href="index-2.html">home 2</a></li>
-                        </ul>
                     </li>
                     <li class="navbar-dropdown">
                         <a href="#about-section">About</a>

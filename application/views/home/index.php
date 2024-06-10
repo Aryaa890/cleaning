@@ -9,7 +9,7 @@
                             <h1>Cleaning Service</h1>
                             <h4>Bersih dan Segar, Hidup Jadi Lebih Mudah - Solusi Terbaik untuk Kebersihan Anda</h4>
                             <div class="d-md-flex">
-                                <a href="#" class="sec-btn">Order Now</a>
+                                <a href="javascript:void(0)" class="sec-btn lightbox-toggle">Order Sekarang</a>
                                 <div>
 
                                 </div>
