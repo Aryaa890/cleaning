@@ -29,7 +29,7 @@
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-primary btn-user btn-block">
-                                Register Account
+                                Register Accounts
                             </button>
                             <hr>
                         </form>
